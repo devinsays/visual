@@ -1,0 +1,9 @@
+Visual 0.2
+
+- Responsive updates
+- Icons fonts added
+- Design polish
+
+Visual 0.1
+
+- Initial submission to WordPress.org
