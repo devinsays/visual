@@ -1,4 +1,6 @@
-Visual makes use of several libraries and scripts built by others.  A big thanks to everyone who has worked on these projects:
+Visual is a dark minimalist WordPress theme for displaying photos and images.
+
+This theme makes use of several libraries and scripts built by others.  A big thanks to everyone who has worked on these projects:
 
 * Visual was built off the foundation of Underscores (_s):
 
