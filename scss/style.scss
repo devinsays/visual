@@ -339,9 +339,38 @@ footer.entry-meta .post-link a:hover {
 	border-top:1px solid #363636;
 	border-bottom:1px solid #161616;
 }
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	font-weight: 700;
+	margin-bottom:15px;
+}
+.entry-content h1, .entry-content h2 {
+	font-size:18px;
+	font-size:1.8rem;
+	letter-spacing: 1px;
+}
+.entry-content h3 {
+	font-size:16px;
+	font-size:1.6rem;
+}
+.entry-content h4, .entry-content h6 {
+	font-size:15px;
+	font-size:1.5rem;
+}
 footer.entry-meta {
 	padding:10px 15px;
 	border-top:1px solid #333;
+	
+}
+footer.entry-meta a {
+	color:#ccc;
+}
+footer.entry-meta a:hover {
+	color:#40d7bc;
 }
 .sticky {
 	/* Required for Theme Review */
@@ -529,7 +558,7 @@ object {
 	border-top:none;
 	box-shadow:inset 0px 1px 1px 1px rgba(0,0,0,0.1);
 	border-radius: 3px;
-	margin-bottom:3em;
+	margin-bottom:20px;
 	padding:15px;
 }
 #comments a {
@@ -548,12 +577,12 @@ object {
 .comments-title, .nocomments, #reply-title {
 	font-size: 15px;
 	font-size: 1.5rem;
-	margin: 0 0 1.5em 0;
+	margin: 0 0 15px 0;
 }
 .commentlist {
 	list-style: none;
-	margin: 0 0 1em 0;
-	padding: 0 0 1em 0;
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
 }
 .commentlist:after {
 	content: '';
@@ -562,11 +591,11 @@ object {
 	background: #191919;
 	border-bottom: 1px solid #363636;
 	display: block;
-	margin-top:2em;
+	margin-top:20px;
 }
 li.comment {
 	list-style: none;
-	margin: 0 0 10px;
+	margin: 0 0 15px;
 	position: relative;
 	padding-left:75px;
 }
@@ -637,21 +666,6 @@ article.comment {
 	float: left;
 	padding: 5px 0;
 	width: 100px;
-}
-
-/* =Infinite Scroll
------------------------------------------------ */
-
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll #nav-above, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll #nav-below,
-.infinite-scroll.neverending #colophon { /* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-.infinity-end.neverending #colophon {
-	display: block;
 }
 
 /* =Responsive
