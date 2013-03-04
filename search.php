@@ -9,15 +9,14 @@
 get_header(); ?>
 
 		<section id="primary" class="content-area">
+			
+			<header class="page-header">
+				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'visual' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			</header><!-- .page-header -->
+				
 			<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>
-
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'visual' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<?php visual_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -26,8 +25,6 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php visual_content_nav( 'nav-below' ); ?>
-
 			<?php else : ?>
 
 				<?php get_template_part( 'no-results', 'search' ); ?>
@@ -35,7 +32,9 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content .site-content -->
-		</section><!-- #primary .content-area -->
+			
+		<?php visual_content_nav( 'nav-below' ); ?>
+			
+		</div><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

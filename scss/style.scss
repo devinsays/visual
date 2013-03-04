@@ -429,6 +429,17 @@ footer.entry-meta a:hover {
 #nav-below a:hover {
 	color:#40d7bc;;
 }
+.page-links {
+	clear:both;
+	padding:10px 0;
+}
+.page-links a {
+	display: inline-block;
+	padding:4px 10px;
+	margin:0 5px;
+	background: #313131;
+	border-radius: 3px;
+}
 
 /* =Asides
 ----------------------------------------------- */
@@ -509,7 +520,8 @@ img.size-full {
 	padding: 0;
 }
 .wp-caption {
-	border: 1px solid #ccc;
+	background: #212121;
+	border: 1px solid #333;
 	margin-bottom: 15px;
 	max-width: 100%;
 }
@@ -528,7 +540,8 @@ img.size-full {
 	margin-bottom: 15px;
 }
 .gallery-caption {
-	/* Required for Theme Review */
+	font-size:13px;
+	font-size:1.3rem;
 }
 .site-content .gallery a img {
 	border: none;

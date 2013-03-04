@@ -12,7 +12,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content clearfix">
 		<?php the_content(); ?>
 		<?php edit_post_link( __( 'Edit', 'visual' ), '<span class="edit-link">', '</span>' ); ?>
 	</div><!-- .entry-content -->

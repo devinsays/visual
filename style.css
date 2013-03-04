@@ -136,14 +136,14 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 15px; }
 
 /* Text elements */
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 15px; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 15px 3em; }
 
 ul {
   list-style: disc; }
@@ -153,13 +153,13 @@ ol {
 
 ul ul, ol ol, ul ol, ol ul {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 15px; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5em 1.5em; }
+  margin: 0 15px 15px; }
 
 b, strong {
   font-weight: bold; }
@@ -168,31 +168,29 @@ dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0 15px; }
 
 address {
-  margin: 0 0 1.5em; }
+  margin: 0 0 15px; }
 
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  padding: 1.6em;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 15px;
   overflow: auto;
   max-width: 100%; }
 
 code, kbd, tt, var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+  font: 14px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
 abbr, acronym {
   border-bottom: 1px dotted #666666;
   cursor: help; }
 
 mark, ins {
-  background: #fff9c0;
+  background: #00877f;
   text-decoration: none; }
 
 sup,
@@ -219,7 +217,7 @@ figure {
   margin: 0; }
 
 table {
-  margin: 0 0 1.5em;
+  margin: 0 0 15px;
   width: 100%; }
 
 th {
@@ -324,12 +322,12 @@ textarea {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em; }
+  margin-right: 15px; }
 
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em; }
+  margin-left: 15px; }
 
 .aligncenter {
   clear: both;
@@ -774,6 +772,17 @@ footer.entry-meta a:hover {
 #nav-below a:hover {
   color: #40d7bc; }
 
+.page-links {
+  clear: both;
+  padding: 10px 0; }
+
+.page-links a {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 0 5px;
+  background: #313131;
+  border-radius: 3px; }
+
 /* =Asides
 ----------------------------------------------- */
 #secondary .widget {
@@ -853,7 +862,8 @@ img.size-full {
   padding: 0; }
 
 .wp-caption {
-  border: 1px solid #cccccc;
+  background: #212121;
+  border: 1px solid #333333;
   margin-bottom: 15px;
   max-width: 100%; }
 
@@ -872,7 +882,8 @@ img.size-full {
   margin-bottom: 15px; }
 
 .gallery-caption {
-  /* Required for Theme Review */ }
+  font-size: 13px;
+  font-size: 1.3rem; }
 
 .site-content .gallery a img {
   border: none;
