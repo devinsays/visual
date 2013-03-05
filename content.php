@@ -24,16 +24,10 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-	<?php else : ?>
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'visual' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
-	<?php endif; ?>
 
 	<footer class="entry-meta clearfix">
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>

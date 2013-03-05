@@ -745,6 +745,12 @@ footer.entry-meta a:hover {
 
 /* =404
 ----------------------------------------------- */
+.search-no-results .hentry {
+  float: none;
+  width: auto; }
+
+/* =404
+----------------------------------------------- */
 .error404 .entry-content #searchform {
   margin-bottom: 20px; }
 
@@ -1045,6 +1051,10 @@ article.comment {
 
   .masonry .hentry {
     width: 48%; }
+
+  .search-no-results .hentry {
+    float: none;
+    width: auto; }
 
   #primary {
     float: none;
