@@ -34,9 +34,13 @@
 			<nav role="navigation" class="site-navigation main-navigation clearfix">
 				<h3 class="assistive-text menu-toggle"><a class="icon-menu" href="#menu-main"><?php _e( 'Menu', 'visual' ); ?></a></h3>
 				<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'visual' ); ?>"><?php _e( 'Skip to content', 'visual' ); ?></a></div>
-			<?php if ( wp_nav_menu( array( 'theme_location' => 'primary' ) ) ) {
+			<?php
+			if ( has_nav_menu( 'primary' ) ) {
 				wp_nav_menu( array( 'theme_location' => 'primary', 'walker' => new Visual_Nav_Walker(), 'depth' => '2' ) );
-			} ?>
+			} else {
+				wp_page_menu();
+			}
+			?>
 			</nav><!-- .site-navigation .main-navigation -->
 		</div>
 	</header><!-- #masthead .site-header -->
