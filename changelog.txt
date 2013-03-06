@@ -1,9 +1,14 @@
+Visual 0.2.1
+
+- New screenshot
+- Updated theme URI
+- Better support for fallback menus
+
 Visual 0.2
 
-- Icon font
+- Added Icon font Entypo
 - Lazy load of images in masonry layout
 - Updates to archive, search and 404 templates
-
 - Design polish
 
 Visual 0.1

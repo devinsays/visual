@@ -93,4 +93,5 @@ get_header(); ?>
 			
 		</div><!-- #primary .content-area -->
 
+<?php if ( is_author() ) { get_sidebar(); } ?>
 <?php get_footer(); ?>

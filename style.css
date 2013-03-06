@@ -1,10 +1,10 @@
 /*
 Theme Name: Visual
-Theme URI: http://wptheming.com/visual
+Theme URI: http://wptheming.com/2013/03/visual-theme/
 Author: Devin Price
 Author URI: http://wptheming.com
 Description: Visual is a dark minimalist WordPress theme for displaying photos and images.
-Version: 0.2
+Version: 0.2.1
 License: GNU General Public License
 License URI: license.txt
 Tags: dark, black, flexible-width, featured-images, post-formats, translation-ready, photoblogging
@@ -612,6 +612,20 @@ button:active, input[type="submit"]:active, input[type="button"]:active, input[t
 
 .main-navigation ul li:hover > ul {
   display: block; }
+
+/* Three level menus aren't really supported */
+.main-navigation ul ul ul {
+  display: block;
+  position: relative;
+  float: none;
+  border-left: none;
+  border-right: none;
+  top: 0;
+  left: 0;
+  width: 190px; }
+
+.main-navigation ul ul ul li:last-of-type {
+  border: none; }
 
 /* Small menu */
 .menu-toggle {
