@@ -45,16 +45,18 @@ address {
 	margin: 0 0 15px;
 }
 pre {
-	background: #eee;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 14px;
 	font-size: 1.4rem;
 	padding: 15px;
 	overflow: auto;
 	max-width: 100%;
+	margin-bottom:15px;
 }
 code, kbd, tt, var {
-	font: 14px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 14px;
+	font-size: 1.4rem;
 }
 abbr, acronym {
 	border-bottom: 1px dotted #666;

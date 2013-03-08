@@ -1,3 +1,7 @@
+Visual Development
+
+- Style update for pre tags
+
 Visual 0.2.1
 
 - New screenshot

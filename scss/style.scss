@@ -108,6 +108,13 @@ button:active, input[type="submit"]:active, input[type="button"]:active, input[t
 	border-top: 2px solid #000;
 	padding: 7px 24px 8px;
 }
+pre {
+	border:1px solid #292929;
+	border-top:none;
+	box-shadow:inset 0px 1px 1px 1px rgba(0,0,0,0.1);
+	border-radius: 6px;
+	background:#191919;
+}
 
 /* =Structure
 ----------------------------------------------- */
