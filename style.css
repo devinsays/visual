@@ -4,7 +4,7 @@ Theme URI: http://wptheming.com/2013/03/visual-theme/
 Author: Devin Price
 Author URI: http://wptheming.com
 Description: Visual is a dark minimalist WordPress theme for displaying photos and images.
-Version: 0.2.1
+Version: 0.2.2
 License: GNU General Public License
 License URI: license.txt
 Tags: dark, black, flexible-width, featured-images, post-formats, translation-ready, photoblogging
@@ -18,6 +18,8 @@ underscores.me
 */
 /* =Icon Font
 -------------------------------------------------------------- */
+/* Included fonts are licensed SIL */
+/* See readme.txt for more information */
 @font-face {
   font-family: 'entypo-custom';
   src: url("fonts/entypo-custom.eot?01");
