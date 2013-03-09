@@ -1,6 +1,7 @@
-Visual Development
+Visual 0.2.2
 
 - Style update for pre tags
+- Update readme.txt to link to licenses
 
 Visual 0.2.1
 
