@@ -97,14 +97,3 @@ class Visual_Nav_Walker extends Walker_Nav_Menu {
 	}
 	
 }
-
-/**
- * Lazy load thumbnails
- *
- * @since Visual 0.2
- */
-function visual_postload_thumbnail( $thumbnail ) {
-	$pixel = 'src="' . get_template_directory_uri() . '/images/pixel.gif"';
-	$thumbnail = str_replace( 'src=', $pixel . ' data-src=', $thumbnail );
-	return $thumbnail;
-}

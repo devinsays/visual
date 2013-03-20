@@ -1,3 +1,7 @@
+Development
+
+- Remove homebrew lazy load
+
 Visual 0.2.2
 
 - Style update for pre tags

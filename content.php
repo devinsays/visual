@@ -9,8 +9,7 @@
 	<?php if ( has_post_thumbnail() ) { ?>
 	<figure class="visual-thumbnail">
 		<a href="<?php the_permalink() ?>" class="thumbnail">
-		<?php $thumbnail = get_the_post_thumbnail( null, 'visual-thumbnail' ); ?>
-		<?php echo visual_postload_thumbnail( $thumbnail ); ?>
+		<?php the_post_thumbnail( 'visual-thumbnail' ); ?>
 		</a>
 	</figure>
 	<?php } ?>
