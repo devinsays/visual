@@ -15,8 +15,7 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="section clearfix">
-		<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'visual' ); ?>" rel="generator">WordPress</a>
-		<a href="http://wptheming.com"><?php _e( 'Theme: ', 'visual' ); ?> Visual</a>
+		<?php do_action( 'visual_footer_text' ); ?>
 	</div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 

@@ -1,11 +1,13 @@
 Development
 
-- Remove homebrew lazy load
+- Added options panel
+- Added option for footer text
+- Removed homebrew lazy load of images
 
 Visual 0.2.2
 
 - Style update for pre tags
-- Update readme.txt to link to licenses
+- Updates readme.txt to link to licenses
 
 Visual 0.2.1
 

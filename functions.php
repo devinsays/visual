@@ -41,6 +41,11 @@ function visual_setup() {
 	 * Custom functions that act independently of the theme templates
 	 */
 	require( get_template_directory() . '/inc/extras.php' );
+	
+	/**
+	 * Functions to enable the options
+	 */
+	require( get_template_directory() . '/inc/options-functions.php' );
 
 	/**
 	 * Customizer additions
@@ -161,3 +166,13 @@ function visual_body_class( $classes ) {
 }
 
 add_filter('body_class','visual_body_class');
+
+/**
+ * Loads options.php from "inc" directory
+ *
+ * @since Visual 0.3
+ */
+ 
+add_filter ( 'options_framework_location', function() {
+	return array('/inc/options.php');
+} );

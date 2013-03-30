@@ -3,14 +3,14 @@
  * Custom template tags for this theme
  *
  * @package Visual
- * @since Visual 1.0
+ * @since Visual 0.1
  */
 
 if ( ! function_exists( 'visual_content_nav' ) ) :
 /**
  * Display navigation to next/previous pages when applicable
  *
- * @since Visual 1.0
+ * @since Visual 0.1
  */
 function visual_content_nav( $nav_id ) {
 	global $wp_query, $post;
@@ -64,7 +64,7 @@ if ( ! function_exists( 'visual_comment' ) ) :
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @since Visual 1.0
+ * @since Visual 0.1
  */
 function visual_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
@@ -118,7 +118,7 @@ if ( ! function_exists( 'visual_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  *
- * @since Visual 1.0
+ * @since Visual 0.1
  */
 function visual_posted_on() {
 	printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'visual' ),
@@ -136,7 +136,7 @@ endif;
 /**
  * Returns true if a blog has more than 1 category
  *
- * @since Visual 1.0
+ * @since Visual 0.1
  */
 function visual_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
@@ -163,7 +163,7 @@ function visual_categorized_blog() {
 /**
  * Flush out the transients used in visual_categorized_blog
  *
- * @since Visual 1.0
+ * @since Visual 0.1
  */
 function visual_category_transient_flusher() {
 	// Like, beat it. Dig?
