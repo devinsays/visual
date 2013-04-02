@@ -23,9 +23,22 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array(
-		'name' => __( 'General Options', 'visual' ),
+		'name' => __( 'Visual Options', 'visual' ),
 		'type' => 'heading',
 	);
+	
+	$options['visual_styles'] = array(
+		'name' => __( 'Visual Style', 'visual' ),
+		'desc' => __('Select a style for the theme.' , 'visual'),
+		'id' => 'visual_style',
+		'std' => 'dark',
+		'type' => 'select',
+		'options' => array(
+				get_stylesheet_directory_uri() . '/css/dark.css' => __( 'Dark', 'visual' ),
+				get_stylesheet_directory_uri() . '/css/light.css' => __( 'Light', 'visual' ),
+				"0" => "Minimal", // Default stylesheet
+			)
+		);
 	
 	$footer_text = sprintf(
 		'<a href="%1$s" title="%2$s" rel="generator">WordPress</a> <a href="%3$s">%4$s</a>',

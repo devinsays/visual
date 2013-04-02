@@ -1,8 +1,9 @@
 Development
 
 - Added options panel
+- Added multiple style options (dark, light, minimal)
 - Added option for footer text
-- Removed homebrew lazy load of images
+- Removed image lazy loading
 
 Visual 0.2.2
 

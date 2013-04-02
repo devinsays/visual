@@ -1,0 +1,250 @@
+/* =Dark Styles
+----------------------------------------------- */
+body {
+  background: #212121;
+  color: #eee; }
+
+a {
+  color: #40d7bc; }
+
+a:visited {
+  color: #40d7bc; }
+
+a:hover,
+a:focus,
+a:active {
+  color: #fff; }
+
+input[type="text"],
+textarea {
+  background: #191919;
+  color: #eee;
+  border: 1px solid #292929;
+  border-top: none;
+  box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.1); }
+
+input[type="submit"], input[type="button"], input[type="reset"] {
+  background: #313131;
+  background: -webkit-linear-gradient(top, #323232 0%, #212121 100%);
+  background: -moz-linear-gradient(top, #323232 0%, #212121 100%);
+  background: -ms-linear-gradient(top, #323232 0%, #212121 100%);
+  background: -o-linear-gradient(top, #323232 0%, #212121 100%);
+  background: linear-gradient(to bottom, #323232 0%, #212121 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#323232', endColorstr='#212121',GradientType=0 );
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid black; }
+
+button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
+  background: #212121;
+  background: -webkit-linear-gradient(top, #212121 0%, #323232 100%);
+  background: -moz-linear-gradient(top, #212121 0%, #313131 100%);
+  background: -ms-linear-gradient(top, #212121 0%, #313131 100%);
+  background: -o-linear-gradient(top, #212121 0%, #313131 100%);
+  background: linear-gradient(to bottom, #212121 0%, #313131 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212121', endColorstr='#323232',GradientType=0 );
+  border: none;
+  border-top: 2px solid black; }
+
+pre {
+  border: 1px solid #292929;
+  border-top: none;
+  box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background: #191919; }
+
+/* =Structure
+----------------------------------------------- */
+#colophon {
+  background: #313131;
+  border-top: 1px solid #212121;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
+
+#colophon a {
+  color: #ddd; }
+
+mark, ins {
+  background: #00877f; }
+
+/* =Header
+----------------------------------------------- */
+#masthead {
+  background: #313131;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.05); }
+
+.site-title a {
+  color: #eee;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8); }
+
+.site-title a:hover {
+  color: #40d7bc;
+  text-decoration: none; }
+
+/* =Menu
+----------------------------------------------- */
+.main-navigation {
+  border-right: 1px solid #161616; }
+
+.main-navigation li {
+  border-left: 1px solid #161616; }
+
+.main-navigation a {
+  color: #ddd;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #363636; }
+
+.main-navigation li:last-of-type a {
+  border-right: 1px solid #363636; }
+
+.main-navigation li a:hover {
+  border-color: #000;
+  background: #000;
+  color: #40d7bc; }
+
+.main-navigation ul ul {
+  background: #000;
+  top: 60px;
+  left: -1px;
+  border-top: 1px solid #222222;
+  border-left: 1px solid #222222;
+  border-right: 1px solid #222222; }
+
+.main-navigation ul ul li {
+  border-bottom: 1px solid #161616; }
+
+.main-navigation ul ul li a {
+  background: #313131;
+  border-bottom: 1px solid #363636; }
+
+.main-navigation ul ul li a:hover {
+  border-bottom: 1px solid #161616; }
+
+/* =Masonry Layout
+----------------------------------------------- */
+.masonry .entry-title a {
+  color: #fff; }
+
+.masonry footer.entry-meta a {
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9); }
+
+.masonry footer.entry-meta a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+footer.entry-meta .post-link a:hover {
+  color: #40d7bc; }
+
+/* =Content
+----------------------------------------------- */
+.hentry {
+  background: #292929;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border: none; }
+
+.entry-header {
+  border-bottom: 1px solid #161616; }
+
+.entry-meta a {
+  color: #ddd; }
+
+.entry-content {
+  border-top: 1px solid #363636;
+  border-bottom: 1px solid #161616; }
+
+footer.entry-meta {
+  border-top: 1px solid #333333; }
+
+footer.entry-meta a {
+  color: #ccc; }
+
+footer.entry-meta a:hover {
+  color: #40d7bc; }
+
+/* =Archives
+----------------------------------------------- */
+.page-header {
+  border: 1px solid #333333;
+  border-top: 1px solid #292929;
+  box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.1); }
+
+/* =Post Navigation
+----------------------------------------------- */
+#nav-below {
+  border: 1px solid #292929;
+  box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.1); }
+
+#nav-below a {
+  color: #ddd;
+  text-decoration: none; }
+
+#nav-below a:hover {
+  color: #40d7bc; }
+
+.page-links a {
+  background: #313131;
+  text-decoration: none; }
+
+/* =Asides
+----------------------------------------------- */
+#secondary .widget {
+  background: #292929;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border: none; }
+
+#secondary .widget-title {
+  border-bottom: 1px solid #363636; }
+
+#secondary .widget-title:after {
+  border-bottom: 1px solid #161616; }
+
+/* =Media
+----------------------------------------------- */
+.wp-caption {
+  background: #212121;
+  border: 1px solid #333333; }
+
+/* =Comments
+----------------------------------------------- */
+#comments {
+  border: 1px solid #292929;
+  border-top: none;
+  box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.1); }
+
+#comments a {
+  color: #ddd; }
+
+#comments a:hover {
+  color: #40d7bc; }
+
+.commentlist:after {
+  background: #191919;
+  border-bottom: 1px solid #363636; }
+
+article.comment {
+  background: #292929;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+
+.commentlist .avatar {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05); }
+
+#respond .form-allowed-tags {
+  color: #ccc; }
+
+/* =Responsive
+----------------------------------------------- */
+@media screen and (max-width: 790px) {
+  .menu-main-container {
+    border-top: 1px solid #161616; }
+
+  .main-navigation li:last-child {
+    border-right: 1px solid #161616; } }
+@media screen and (max-width: 490px) {
+  .menu-toggle {
+    border-left: 1px solid #161616; }
+
+  .menu-toggle a:hover {
+    border-color: #000;
+    background: #000;
+    color: #40d7bc; } }
