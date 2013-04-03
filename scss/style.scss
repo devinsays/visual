@@ -17,6 +17,8 @@ underscores.me
 
 */
 
+@import "bourbon";
+
 /* =Icon Font
 -------------------------------------------------------------- */
 
@@ -53,10 +55,7 @@ body {
 a {
 	color:#449ccc;
 	text-decoration: none;
-	-webkit-transition: color 0.2s ease-out;  /* Chrome 1-25, Safari 3.2+ */
-    -moz-transition: color 0.2s ease-out;  /* Firefox 4-15 */
-    -o-transition: color 0.2s ease-out;  /* Opera 10.50–12.00 */
-    transition: color 0.2s ease-out;
+    @include transition (color 0.2s ease-out);
 }
 a:hover,
 a:focus,
@@ -100,9 +99,7 @@ pre {
 	float:left;
 	width:100%;
 	padding-right:320px;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;
+	@include box-sizing(border-box);
 }
 #secondary {
 	float:left;
@@ -248,14 +245,7 @@ pre {
 	width:32%;
 }
 .masonry .hentry {
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    -o-transition-property: height, width;
-    transition-property: height, width;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
+    @include transition (height, width 0.2s);
 }
 .masonry .hentry img {
 	display:block;

@@ -4,6 +4,7 @@ Development
 - Added multiple style options (dark, light, minimal)
 - Added option for footer text
 - Removed image lazy loading
+- Update SASS files to use bourbon
 
 Visual 0.2.2
 
