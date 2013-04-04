@@ -106,10 +106,7 @@ pre {
 	width:300px;
 	margin-left:-300px;
 }
-#colophon {
-	background:#eee;
-	padding:15px 0;
-}
+
 /* =Header
 ----------------------------------------------- */
 
@@ -592,6 +589,14 @@ article.comment {
 	float: left;
 	padding: 5px 0;
 	width: 100px;
+}
+
+/* =Footer
+----------------------------------------------- */
+
+#colophon {
+	background:#eee;
+	padding:15px 0;
 }
 
 /* =Responsive

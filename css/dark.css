@@ -58,18 +58,6 @@ pre {
   background: #191919;
 }
 
-/* =Structure
------------------------------------------------ */
-#colophon {
-  background: #313131;
-  border-top: 1px solid #212121;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-}
-
-#colophon a {
-  color: #ddd;
-}
-
 mark, ins {
   background: #00877f;
 }
@@ -282,6 +270,18 @@ article.comment {
 
 #respond .form-allowed-tags {
   color: #ccc;
+}
+
+/* =Footer
+----------------------------------------------- */
+#colophon {
+  background: #313131;
+  border-top: 1px solid #212121;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#colophon a {
+  color: #ddd;
 }
 
 /* =Responsive

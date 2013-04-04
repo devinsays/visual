@@ -1,2 +1,92 @@
 /* =Light Styles
 ----------------------------------------------- */
+/* =Elements
+----------------------------------------------- */
+body {
+  background: whitesmoke url("../img/light-noise.png");
+}
+
+/* =Header
+----------------------------------------------- */
+#masthead {
+  background: -webkit-linear-gradient(#fefefe 0%, #f9f9f9 100%);
+  background: -moz-linear-gradient(#fefefe 0%, #f9f9f9 100%);
+  background: -ms-linear-gradient(#fefefe 0%, #f9f9f9 100%);
+  background: -o-linear-gradient(#fefefe 0%, #f9f9f9 100%);
+  background: linear-gradient(#fefefe 0%, #f9f9f9 100%);
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.02);
+}
+
+/* =Menu
+----------------------------------------------- */
+.main-navigation {
+  border-right: 1px solid #e5e5e5;
+}
+
+.main-navigation li {
+  border-left: 1px solid #e5e5e5;
+}
+
+.main-navigation a {
+  border-left: 1px solid white;
+}
+
+.main-navigation li:last-of-type a {
+  border-right: 1px solid white;
+}
+
+.main-navigation li a:hover, .main-navigation li:hover > a {
+  border-color: #fff;
+  background: -webkit-linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+  background: -moz-linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+  background: -ms-linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+  background: -o-linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+  background: linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+}
+
+.main-navigation ul ul {
+  background: #fcfcfc;
+  left: -1px;
+  border: 1px solid #e5e5e5;
+  border-top-color: #fff;
+}
+
+.main-navigation ul ul li {
+  border-top: 1px solid #e5e5e5;
+}
+
+.main-navigation ul ul li a {
+  background: #fcfcfc;
+}
+
+.main-navigation ul ul li a:hover {
+  background: -webkit-linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+  background: -moz-linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+  background: -ms-linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+  background: -o-linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+  background: linear-gradient(#f2f2f2 0%, #fcfcfc 100%);
+}
+
+/* =Content
+----------------------------------------------- */
+.hentry {
+  border: 1px solid #e9e9e9;
+}
+
+/* =Asides
+----------------------------------------------- */
+#secondary .widget {
+  border: 1px solid #e9e9e9;
+}
+
+/* =Footer
+----------------------------------------------- */
+#colophon {
+  background: -webkit-linear-gradient(#f9f9f9 0%, #fefefe 100%);
+  background: -moz-linear-gradient(#f9f9f9 0%, #fefefe 100%);
+  background: -ms-linear-gradient(#f9f9f9 0%, #fefefe 100%);
+  background: -o-linear-gradient(#f9f9f9 0%, #fefefe 100%);
+  background: linear-gradient(#f9f9f9 0%, #fefefe 100%);
+  border-top: 1px solid #e5e5e5;
+}
