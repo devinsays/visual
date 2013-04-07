@@ -1027,6 +1027,7 @@ li.comment {
 }
 
 article.comment {
+  background: #fff;
   display: block;
   border-radius: 3px;
   padding: 10px;
