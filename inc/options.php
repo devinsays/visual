@@ -60,3 +60,58 @@ function optionsframework_options() {
 
 	return $options;
 }
+
+/* 
+ * This function adds the html that will appear in the sidebar module of the
+ * options panel.  Feel free to alter this how you see fit.
+ */
+
+add_action( 'optionsframework_after','visual_options_panel_markup' );
+
+function visual_options_panel_markup() {
+	
+	$text[0] = sprintf( __( 'Read the <a href="%1$s">documentation for Visual</a>.', 'visual' ),
+	esc_url( 'http://wptheming.com/2013/03/visual-theme/' )
+	);
+	
+	$text[1] = sprintf( __( 'General questions can be asked in the WordPress <a href="%1$s">forums</a>.', 'visual' ),
+		esc_url( 'http://wordpress.org/support/' )
+	);
+	
+	$text[2] = sprintf( __( 'Specific questions about the Visual theme can be asked in the <a href="%1$s">Visual</a> forum.', 'visual' ),
+		esc_url( 'http://wordpress.org/support/theme/visual' )
+	);
+	
+	$text[3] = sprintf( __( 'Hope you enjoy this theme!  Positive <a href="%1$s">ratings</a> are always appreciated.', 'visual' ),
+		esc_url( 'http://wordpress.org/support/view/theme-reviews/visual' )
+	);
+	?>
+	<div id="optionsframework-sidebar">
+		<div class="metabox-holder">
+			<div class="postbox">
+				<h3><?php _e('About Visual', 'visual'); ?></h3>
+					<div class="inside">
+						<p><?php echo $text[0]; ?></p>
+						<p><?php echo $text[1]; ?></p>
+						<p><?php echo $text[2]; ?></p>
+						<p><?php echo $text[3]; ?></p>
+					</div>
+			</div>
+		</div>
+	</div>
+<?php }
+
+/* 
+ * This function loads an additional CSS file for the options panel
+ * which allows us to style the sidebar
+ */
+ 
+ if ( is_admin() ) {
+    $of_page= 'appearance_page_options-framework';
+    add_action( "admin_print_styles-$of_page", 'visual_options_panel_styles', 100);
+}
+ 
+function visual_options_panel_styles () {
+	wp_register_style( 'visual_options_panel_styles', get_stylesheet_directory_uri() .'/css/options-panel-styles.css' );
+	wp_enqueue_style( 'visual_options_panel_styles' );
+}

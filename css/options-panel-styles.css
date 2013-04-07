@@ -1,0 +1,20 @@
+/*
+
+Remember, with great styling power comes great styling responsibility.
+Try to match the WordPress UI as best as possible.
+
+*/
+#optionsframework-metabox {
+	margin-right:300px;
+}
+#optionsframework {
+	float:left;
+	width:100%;
+}
+#optionsframework-sidebar {
+	float: right;
+	width: 280px;
+}
+#optionsframework-sidebar .metabox-holder {
+	padding-top:0;
+}
