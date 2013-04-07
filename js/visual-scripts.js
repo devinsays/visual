@@ -10,7 +10,7 @@ jQuery( document ).ready( function( $ ) {
 	
 	$('.menu-toggle a').on( 'click', function(e) {
 		e.preventDefault();
-		$('.menu-main-container').slideToggle('slow', function() {
+		$('.main-navigation .menu').slideToggle('slow', function() {
 			if ( $(this).is(":hidden") ) {
 				$(this).attr('style','');
 			}

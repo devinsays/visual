@@ -287,11 +287,11 @@ article.comment {
 /* =Responsive
 ----------------------------------------------- */
 @media screen and (max-width: 790px) {
-  .menu-main-container {
+  .main-navigation .menu {
     border-top: 1px solid #161616;
   }
 
-  .main-navigation li:last-child {
+  .main-navigation .menu li:last-child {
     border-right: 1px solid #161616;
   }
 }

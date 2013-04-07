@@ -5,6 +5,7 @@ Development
 - Added option for footer text
 - Removed image lazy loading
 - Update SASS files to use bourbon
+- Bugfix for responsive menus
 
 Visual 0.2.2
 

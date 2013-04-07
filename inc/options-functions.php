@@ -30,7 +30,7 @@ function visual_footer_text() {
 /* Style options */
 
 function visual_style()   {
-	if ( of_get_option('visual_style') ) {
+	if ( of_get_option('visual_style') && of_get_option('visual_style') != 'minimal' ) {
 		wp_enqueue_style( 'visual_style', of_get_option('visual_style'), array(), null );
 	}
 }

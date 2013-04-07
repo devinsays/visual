@@ -20,6 +20,8 @@ function optionsframework_option_name() {
 
 function optionsframework_options() {
 
+	$path =  get_template_directory_uri();
+	
 	$options = array();
 
 	$options[] = array(
@@ -27,19 +29,15 @@ function optionsframework_options() {
 		'type' => 'heading'
 	);
 	
-	$styles = array(
-		'0' => "Minimal",
-		get_stylesheet_directory_uri() . '/css/dark.css' => __( 'Dark', 'visual' ),
-		get_stylesheet_directory_uri() . '/css/light.css' => __( 'Light', 'visual' ),
-	);
-	
 	$options['visual_styles'] = array(
 		'name' => __( 'Visual Style', 'visual' ),
-		'desc' => __('Select a style for the theme.' , 'visual'),
 		'id' => 'visual_style',
-		'std' => 'dark',
-		'type' => 'select',
-		'options' => $styles
+		'std' => $path . '/css/dark.css',
+		'type' => 'images',
+		'options' => array(
+			'minimal' => $path . '/img/minimal.jpg',
+			$path . '/css/light.css' => $path . '/img/light.jpg',
+			$path . '/css/dark.css' => $path . '/img/dark.jpg')
 	);
 	
 	$footer_text = sprintf(
@@ -70,7 +68,7 @@ add_action( 'optionsframework_after','visual_options_panel_markup' );
 
 function visual_options_panel_markup() {
 	
-	$text[0] = sprintf( __( 'Read the <a href="%1$s">documentation for Visual</a>.', 'visual' ),
+	$text[0] = sprintf( __( 'Read the <a href="%1$s">documentation</a>.', 'visual' ),
 	esc_url( 'http://wptheming.com/2013/03/visual-theme/' )
 	);
 	
@@ -82,7 +80,7 @@ function visual_options_panel_markup() {
 		esc_url( 'http://wordpress.org/support/theme/visual' )
 	);
 	
-	$text[3] = sprintf( __( 'Hope you enjoy this theme!  Positive <a href="%1$s">ratings</a> are always appreciated.', 'visual' ),
+	$text[3] = sprintf( __( 'Hope you enjoy this theme!  <a href="%1$s">Ratings</a> are always appreciated.', 'visual' ),
 		esc_url( 'http://wordpress.org/support/view/theme-reviews/visual' )
 	);
 	?>

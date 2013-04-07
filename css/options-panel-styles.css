@@ -1,7 +1,6 @@
 /*
 
-Remember, with great styling power comes great styling responsibility.
-Try to match the WordPress UI as best as possible.
+Styling for the options panel
 
 */
 #optionsframework-metabox {
@@ -17,4 +16,14 @@ Try to match the WordPress UI as best as possible.
 }
 #optionsframework-sidebar .metabox-holder {
 	padding-top:0;
+}
+#optionsframework #section-visual_style .controls {
+	width:100%;
+	padding:0;
+	float:none;
+}
+
+#section-visual_style .controls img {
+	max-width:195px;
+	height:auto;
 }
