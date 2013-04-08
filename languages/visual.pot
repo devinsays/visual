@@ -1,0 +1,317 @@
+# Copyright (C) 2013 Devin Price
+# This file is distributed under the GNU General Public License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Visual 0.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/visual\n"
+"POT-Creation-Date: 2013-04-08 04:25:51+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:16
+msgid "Oops! That page can&apos;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: archive.php:19
+msgid "Category Archives: %s"
+msgstr ""
+
+#: archive.php:22
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: archive.php:29
+msgid "Author Archives: %s"
+msgstr ""
+
+#: archive.php:37
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:40
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:43
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:46 sidebar.php:18
+msgid "Archives"
+msgstr ""
+
+#: comments.php:32
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39 comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40 comments.php:60
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:41 comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:17 content-single.php:62 image.php:35 image.php:108
+msgid "Edit"
+msgstr ""
+
+#: content-single.php:26 content.php:28 image.php:94
+msgid "Pages:"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+
+#: content-single.php:32 content-single.php:35
+msgid ", "
+msgstr ""
+
+#: content-single.php:40
+msgid "This entry was tagged %2$s."
+msgstr ""
+
+#: content-single.php:46
+msgid "This entry was posted in %1$s and tagged %2$s."
+msgstr ""
+
+#: content-single.php:48
+msgid "This entry was posted in %1$s."
+msgstr ""
+
+#: content.php:17
+msgid "Permalink to %s"
+msgstr ""
+
+#: content.php:35
+msgid "Comment"
+msgstr ""
+
+#: content.php:35
+msgid "1 Comment"
+msgstr ""
+
+#: content.php:35
+msgid " % Comments"
+msgstr ""
+
+#: functions.php:79
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:99
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:35
+msgid "Menu"
+msgstr ""
+
+#: header.php:36
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:24
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: image.php:39
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:40
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:100
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:102
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:104
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: image.php:106
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: inc/extras.php:73
+msgid "Page %s"
+msgstr ""
+
+#: inc/options-functions.php:16 inc/options.php:46
+msgid "A Semantic Personal Publishing Platform"
+msgstr ""
+
+#: inc/options-functions.php:18 inc/options.php:48
+msgid "Theme: Visual"
+msgstr ""
+
+#: inc/options.php:28
+msgid "Visual Options"
+msgstr ""
+
+#: inc/options.php:33
+msgid "Visual Style"
+msgstr ""
+
+#: inc/options.php:52
+msgid "Footer Text"
+msgstr ""
+
+#: inc/options.php:53
+msgid "This text will go in the footer of the theme.  If you leave it completely blank, no footer will be displayed.  HTML is fine to use."
+msgstr ""
+
+#: inc/options.php:71
+msgid "Read the <a href=\"%1$s\">documentation</a>."
+msgstr ""
+
+#: inc/options.php:75
+msgid "General questions can be asked in the WordPress <a href=\"%1$s\">forums</a>."
+msgstr ""
+
+#: inc/options.php:79
+msgid "Specific questions about the Visual theme can be asked in the <a href=\"%1$s\">Visual</a> forum."
+msgstr ""
+
+#: inc/options.php:83
+msgid "Hope you enjoy this theme!  <a href=\"%1$s\">Ratings</a> are always appreciated."
+msgstr ""
+
+#: inc/options.php:90
+msgid "About Visual"
+msgstr ""
+
+#: inc/template-tags.php:37
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:41
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: inc/template-tags.php:41
+msgid "Previous"
+msgstr ""
+
+#: inc/template-tags.php:42
+msgid "Next"
+msgstr ""
+
+#: inc/template-tags.php:42
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: inc/template-tags.php:47
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: inc/template-tags.php:51
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:76
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:76 inc/template-tags.php:99
+msgid "(Edit)"
+msgstr ""
+
+#: inc/template-tags.php:86
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/template-tags.php:89
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+
+#: inc/template-tags.php:97
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:124
+msgid "Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"byline\"> by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: inc/template-tags.php:130
+msgid "View all posts by %s"
+msgstr ""
+
+#: no-results.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: no-results.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: no-results.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: search.php:14
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:10 searchform.php:12
+msgid "Search"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search &hellip;"
+msgstr ""
+
+#: sidebar.php:25
+msgid "Meta"
+msgstr ""
+#. Theme Name of the plugin/theme
+msgid "Visual"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wptheming.com/2013/03/visual-theme/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Visual is a well-crafted responsive theme designed to showcase images, artwork and photgraphy in a smart grid layout.  Alternative styles (both light and dark) are available to select in the options panel.  An icon font ensures crisp display on retina devices and quick load times.  It's simple for new users to set up.  Developers can easily extend the code in a child theme.  For more information and a theme demo, visit: http://wptheming.com/?p=5277."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Devin Price"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wptheming.com"
+msgstr ""
