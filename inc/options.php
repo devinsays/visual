@@ -110,6 +110,6 @@ function visual_options_panel_markup() {
 }
  
 function visual_options_panel_styles () {
-	wp_register_style( 'visual_options_panel_styles', get_stylesheet_directory_uri() .'/css/options-panel-styles.css' );
+	wp_register_style( 'visual_options_panel_styles', get_stylesheet_directory_uri() .'/inc/options-panel-styles.css' );
 	wp_enqueue_style( 'visual_options_panel_styles' );
 }
