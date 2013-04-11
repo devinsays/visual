@@ -155,7 +155,14 @@ pre {
   border-top: 1px solid #e5e5e5;
 }
 
-/* =Retina Media Queries
+/* =Responsive
+----------------------------------------------- */
+@media screen and (max-width: 790px) {
+  .main-navigation .menu {
+    border-top: 1px solid #e9e9e9;
+  }
+}
+/* =Retina
 ----------------------------------------------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   body {
