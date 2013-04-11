@@ -1,4 +1,4 @@
-Development
+Visual 0.3
 
 - Added options panel
 - Added multiple style options (dark, light, minimal)
@@ -6,6 +6,7 @@ Development
 - Removed image lazy loading
 - Update SASS files to use bourbon
 - Bugfix for responsive menus
+- Added .pot file for translations
 
 Visual 0.2.2
 

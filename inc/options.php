@@ -8,7 +8,11 @@
  * @since Visual 0.3
  */
 
-/* Save options under "visual-theme" option name */
+/**
+ * Theme options are saved under the "visual-theme" option name
+ *
+ * @since Visual 0.3
+ */
 
 function optionsframework_option_name() {
 	$optionsframework_settings = get_option('optionsframework');
@@ -16,7 +20,11 @@ function optionsframework_option_name() {
 	update_option('optionsframework', $optionsframework_settings);
 }
 
-/* Theme Options Array */
+/**
+ * Theme options array
+ *
+ * @since Visual 0.3
+ */
 
 function optionsframework_options() {
 
@@ -29,7 +37,7 @@ function optionsframework_options() {
 		'type' => 'heading'
 	);
 	
-	$options['visual_styles'] = array(
+	$options['visual_style'] = array(
 		'name' => __( 'Visual Style', 'visual' ),
 		'id' => 'visual_style',
 		'std' => $path . '/css/dark.css',
@@ -58,10 +66,11 @@ function optionsframework_options() {
 
 	return $options;
 }
-
-/* 
- * This function adds the html that will appear in the sidebar module of the
- * options panel.  Feel free to alter this how you see fit.
+ 
+/**
+ * Adds the html that will appear in the sidebar module of the options panel.
+ *
+ * @since Visual 0.3
  */
 
 add_action( 'optionsframework_after','visual_options_panel_markup' );
@@ -98,10 +107,11 @@ function visual_options_panel_markup() {
 		</div>
 	</div>
 <?php }
-
-/* 
- * This function loads an additional CSS file for the options panel
- * which allows us to style the sidebar
+ 
+/**
+ * Loads an additional CSS file for the options panel
+ *
+ * @since Visual 0.3
  */
  
  if ( is_admin() ) {
@@ -113,3 +123,40 @@ function visual_options_panel_styles () {
 	wp_register_style( 'visual_options_panel_styles', get_stylesheet_directory_uri() .'/inc/options-panel-styles.css' );
 	wp_enqueue_style( 'visual_options_panel_styles' );
 }
+
+/**
+ * Enable options in the theme customizer
+ *
+ * @since Visual 0.3
+ */
+
+function visual_customizer_register( $wp_customize ) {
+
+	$options = optionsframework_options();
+	$path =  get_template_directory_uri();
+	
+	// Style header
+	$wp_customize->add_section( 'visual_style', array(
+		'title' => __( 'Style', 'visual' ),
+        'priority' => 100
+    ) );
+
+    $wp_customize->add_setting( 'visual-theme[visual_style]', array(
+    	'default' => $options['visual_style']['std'],
+    	'type' => 'option'
+    ) );
+
+    $wp_customize->add_control( 'visual_style', array(
+    	'label' => $options['visual_style']['name'],
+    	'section' => 'visual_style',
+    	'settings' => 'visual-theme[visual_style]',
+    	'type' => 'select',
+    	'choices' => array(
+			'minimal' => __( 'Minimal', 'visual'),
+			$path . '/css/light.css' => __( 'Light', 'visual'),
+			$path . '/css/dark.css' => __( 'Dark', 'visual')
+			)
+    ) );
+}
+
+add_action( 'customize_register', 'visual_customizer_register' );

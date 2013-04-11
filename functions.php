@@ -5,7 +5,7 @@
  * @package Visual
  * @since Visual 0.1
  */
-
+	 
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
@@ -41,6 +41,11 @@ function visual_setup() {
 	 * Custom functions that act independently of the theme templates
 	 */
 	require( get_template_directory() . '/inc/extras.php' );
+	
+	/**
+	 * Loads options for theme customizer
+	 */
+	require_once( get_template_directory() . '/inc/options.php' );
 	
 	/**
 	 * Functions to enable the options

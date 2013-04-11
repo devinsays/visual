@@ -4,6 +4,7 @@
 ----------------------------------------------- */
 body {
   background: whitesmoke url("../img/light-noise.png");
+  background-size: 60px 60px;
 }
 
 a:hover {
@@ -152,4 +153,12 @@ pre {
   background: -o-linear-gradient(#f9f9f9 0%, #fefefe 100%);
   background: linear-gradient(#f9f9f9 0%, #fefefe 100%);
   border-top: 1px solid #e5e5e5;
+}
+
+/* =Retina Media Queries
+----------------------------------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  body {
+    background-image: url("../img/light-noise@2x.png");
+  }
 }
