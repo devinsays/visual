@@ -178,6 +178,8 @@ add_filter('body_class','visual_body_class');
  * @since Visual 0.3
  */
  
-add_filter ( 'options_framework_location', function() {
+function visual_options_location() {
 	return array('/inc/options.php');
-} );
+}
+
+add_filter ( 'options_framework_location', 'visual_options_location' );
