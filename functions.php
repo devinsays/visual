@@ -13,6 +13,20 @@
  */
 if ( ! isset( $content_width ) )
 	$content_width = 670; /* pixels */
+	
+/**
+ * Loads Options Framework for theme options
+ * See: https://github.com/devinsays/options-framework-theme
+ *
+ * @since Visual 0.4
+ */
+function visual_optionsframework_setup() {
+	if ( !function_exists( 'optionsframework_init' ) ) {
+		define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/options-framework/' );
+		require_once dirname( __FILE__ ) . '/inc/options-framework/options-framework.php';
+	}
+}
+add_action( 'after_setup_theme', 'visual_optionsframework_setup' );
 
 /*
  * Load Jetpack compatibility file.

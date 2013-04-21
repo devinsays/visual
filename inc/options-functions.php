@@ -5,31 +5,6 @@
  * @package Visual
  * @since Visual 0.3
  */
- 
-/**
- * Gives user a notice to install the Options Framework plugin
- *
- * @since Visual 0.3
- */
- 
-if ( !function_exists( 'optionsframework_add_page' ) && current_user_can( 'edit_theme_options' )  && current_user_can( 'install_plugins' ) ) {
-
-	global $pagenow;
-	
-	// Checks to see if plugin exists in plugins directory
-	$optionsframework = file_exists( plugins_url( 'options-framework' ) );
-	
-	// Notice only display on themes page, if plugin is not installed
-	if ( $pagenow == 'themes.php' && !$optionsframework )
-		add_action( 'admin_notices', 'visual_options_framework_notice' );
-}
-
-function visual_options_framework_notice() { ?>
-	<div class="updated fade">
-	<p><?php printf( __( 'The Options Framework plugin enables customization options for this theme. <a href="%s">Install Now</a>', 'visual' ), admin_url( sprintf( 'update.php?action=install-plugin&plugin=options-framework&_wpnonce=%s', wp_create_nonce( 'install-plugin_options-framework' ) ) ) );  ?></p>
-	</div>
-<?php
-}
 
 /**
  * Calls options that are saved via the Options Framework plugin

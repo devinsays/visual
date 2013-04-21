@@ -1,3 +1,8 @@
+Visual 0.4
+
+- Included Options Framework library directly in theme
+- Support for Jetpack Infinite Scroll
+
 Visual 0.3
 
 - Added options panel
