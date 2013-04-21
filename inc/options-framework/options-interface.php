@@ -37,7 +37,7 @@ function optionsframework_fields() {
 		$option_name = $optionsframework_settings['id'];
 	}
 	else {
-		$option_name = 'options_framework_theme';
+		$option_name = 'visual';
 	};
 
 	$settings = get_option($option_name);
