@@ -23,7 +23,7 @@ if ( ! isset( $content_width ) )
 function visual_optionsframework_setup() {
 	if ( !function_exists( 'optionsframework_init' ) ) {
 		define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/options-framework/' );
-		require_once dirname( __FILE__ ) . '/inc/options-framework/options-framework.php';
+		require_once( get_template_directory() . '/inc/options-framework/options-framework.php');
 	}
 }
 add_action( 'after_setup_theme', 'visual_optionsframework_setup' );
