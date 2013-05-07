@@ -240,6 +240,10 @@ pre {
 .masonry .hentry {
 	float:left;
 	width:32%;
+	margin-right:20px;
+}
+.masonry .hentry:nth-child(3) {
+	margin:0;
 }
 .masonry .hentry {
     @include transition (height, width 0.2s);
