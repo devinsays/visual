@@ -700,7 +700,7 @@ pre {
 .masonry .hentry {
   float: left;
   width: 32%;
-  margin-right: 18px;
+  margin-right: 1%;
 }
 
 .masonry .hentry:nth-child(3) {
