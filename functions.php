@@ -88,7 +88,7 @@ function visual_setup() {
 	 * Enable support for Post Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'visual-thumbnail', 328, 999 );
+	add_image_size( 'visual-thumbnail', 326, 999 );
 	add_image_size( 'visual-post', 700, 9999 );
 
 	/**
