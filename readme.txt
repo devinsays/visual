@@ -1,4 +1,4 @@
-Visual is a dark minimalist WordPress theme for displaying photos and images.
+Visual is a well-crafted responsive WordPress theme designed to showcase images, artwork and photgraphy in a smart grid layout.
 
 This theme makes use of several libraries and scripts built by others.  A big thanks to everyone who has worked on these projects:
 

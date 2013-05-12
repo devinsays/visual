@@ -704,7 +704,7 @@ pre {
 }
 
 .masonry .hentry:nth-child(3) {
-  margin: 0;
+  margin-right: 0;
 }
 
 .masonry .hentry {
