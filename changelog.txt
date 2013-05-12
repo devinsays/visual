@@ -1,3 +1,8 @@
+Development
+
+- Updates for widget padding
+- Fix for masonry margins
+
 Visual 0.4
 
 - Included Options Framework library directly in theme

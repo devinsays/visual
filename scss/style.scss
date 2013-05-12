@@ -377,37 +377,79 @@ footer.entry-meta {
 /* =Asides
 ----------------------------------------------- */
 
-#secondary .widget {
-	margin:0 0 20px 0;
+/* =Asides
+----------------------------------------------- */
+
+.widget {
+	background: #fff;
 	border-radius: 3px;
-	background:#fff;
+	font-size: 13px;
+	font-size: 1.3rem;
+	margin: 0 0 1.5em;
+	padding: 0 0 1.5em;
 	overflow: hidden;
-	font-size:13px;
-	font-size:1.3rem;
 	border:1px solid #eee;
 }
-#secondary .widget-title {
+.widget-title {
 	display: block;
-	font-size:16px;
+	font-size: 16px;
+	font-size: 1.6rem;
 	margin-bottom:10px;
 }
-#secondary .widget-title:after {
-	content:'';
+.widget-title:after {
+	content: "";
 	display: block;
 }
-#secondary .widget-title span {
-	padding:6px 20px;
+.widget-title span {
 	display: block;
+	padding: 6px 20px;
 }
-#secondary ul {
+.widget-area ul {
 	list-style: none;
-	margin:0 20px 15px;
+	margin: 0 20px;
 }
-#secondary p {
-	margin:0 20px 15px;
+.widget-area li {
+	line-height: 1.5;
+	padding: 3px 0;
 }
-.widget_search {
-	padding:20px;
+/* Ridiculous workarounds for lack of widget-content wrapper */
+.widget-area .tagcloud,
+.widget-area .textwidget,
+.widget-area select,
+.widget-area .recentcommentsavatar,
+.widget-area #subscribe-blog,
+.widget-area .milestone-content,
+.widget-area .widgets-multi-column-grid,
+.widget-area .widgets-grid-layout,
+.widget-area #pd_top_rated_holder,
+.widget_gravatar p,
+.widget_image img,
+.widget_goodreads embed,
+.widget_goodreads img,
+.widget-grofile .grofile-thumbnail,
+.widget-grofile h4,
+.widget-grofile p,
+.widget-grofile ul,
+.widget_facebook_likebox iframe {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.widget-grid-view-image {
+	max-width: 43.5% !important;
+}
+.widget_image img {
+	max-width: 87%;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+
+.widget_search #searchform {
+	padding:5px 20px 0;
 }
 .widget_search input[type="submit"] {
 	padding: 3px 12px 4px;
@@ -416,9 +458,23 @@ footer.entry-meta {
 	margin-top:-1px;
 	padding: 4px 12px 3px;
 }
-/* Make sure select elements fit in widgets */
-.widget select {
-	max-width: 100%;
+
+/* Calendar widget */
+table#wp-calendar {
+	margin: 0 20px 10px;
+	width:260px;
+	max-width: 88%;
+}
+#wp-calendar td,
+#wp-calendar th {
+	padding: 5px 2px;
+	text-align: center;
+}
+#wp-calendar #prev {
+	text-align: left;
+}
+#wp-calendar #next {
+	text-align: right;
 }
 
 /* =Media
