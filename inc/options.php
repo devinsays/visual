@@ -77,20 +77,16 @@ add_action( 'optionsframework_after','visual_options_panel_markup' );
 
 function visual_options_panel_markup() {
 	
-	$text[0] = sprintf( __( 'Read the <a href="%1$s">documentation</a>.', 'visual' ),
+	$text[0] = sprintf( __( 'View the <a href="%1$s">documentation</a>.', 'visual' ),
 	esc_url( 'http://wptheming.com/2013/03/visual-theme/' )
 	);
 	
-	$text[1] = sprintf( __( 'General questions can be asked in the WordPress <a href="%1$s">forums</a>.', 'visual' ),
-		esc_url( 'http://wordpress.org/support/' )
-	);
-	
-	$text[2] = sprintf( __( 'Specific questions about the Visual theme can be asked in the <a href="%1$s">Visual</a> forum.', 'visual' ),
+	$text[1] = sprintf( __( 'Specific questions about the Visual theme can be asked in the <a href="%1$s">Visual</a> forum.', 'visual' ),
 		esc_url( 'http://wordpress.org/support/theme/visual' )
 	);
 	
-	$text[3] = sprintf( __( 'Hope you enjoy this theme!  <a href="%1$s">Ratings</a> are always appreciated.', 'visual' ),
-		esc_url( 'http://wordpress.org/support/view/theme-reviews/visual' )
+	$text[2] = sprintf( __( 'If you\'d like to support the theme and/or get a version with more features, please <a href="%1$s">see Visual+</a>.', 'visual' ),
+		esc_url( 'wptheming.com/visual' )
 	);
 	?>
 	<div id="optionsframework-sidebar">
@@ -101,7 +97,6 @@ function visual_options_panel_markup() {
 						<p><?php echo $text[0]; ?></p>
 						<p><?php echo $text[1]; ?></p>
 						<p><?php echo $text[2]; ?></p>
-						<p><?php echo $text[3]; ?></p>
 					</div>
 			</div>
 		</div>

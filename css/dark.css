@@ -309,4 +309,40 @@ article.comment {
     background: #000;
     color: #40d7bc;
   }
+
+  .main-navigation, .main-navigation .menu {
+    border: none;
+  }
+
+  .main-navigation li {
+    border: none;
+    border-top: 1px solid #161616;
+    box-shadow: none;
+  }
+
+  .main-navigation li:hover > a {
+    background: none;
+  }
+
+  .main-navigation a {
+    border: none;
+  }
+
+  .main-navigation li a:hover {
+    background: #000;
+  }
+
+  .main-navigation ul ul {
+    background: none;
+    top: 0;
+    border: none;
+  }
+
+  .main-navigation ul ul li a:hover {
+    background: #000;
+  }
+
+  .main-navigation ul ul li a:hover {
+    border-color: #161616;
+  }
 }

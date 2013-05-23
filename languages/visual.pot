@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License.
 msgid ""
 msgstr ""
-"Project-Id-Version: Visual 0.3\n"
+"Project-Id-Version: Visual 0.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/visual\n"
-"POT-Creation-Date: 2013-04-11 04:17:37+00:00\n"
+"POT-Creation-Date: 2013-05-23 04:11:43+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -113,11 +113,11 @@ msgstr ""
 msgid " % Comments"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:98
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:104
+#: functions.php:118
 msgid "Sidebar"
 msgstr ""
 
@@ -161,15 +161,146 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: inc/options-functions.php:29
-msgid "The Options Framework plugin enables customization options for this theme. <a href=\"%s\">Install Now</a>"
+#: inc/options-framework/options-framework.php:173
+#: inc/options-framework/options-framework.php:388
+msgid "Theme Options"
 msgstr ""
 
-#: inc/options-functions.php:72 inc/options.php:54
+#: inc/options-framework/options-framework.php:204
+msgid "Clear"
+msgstr ""
+
+#: inc/options-framework/options-framework.php:205
+msgid "Default"
+msgstr ""
+
+#: inc/options-framework/options-framework.php:206
+msgid "Select Color"
+msgstr ""
+
+#: inc/options-framework/options-framework.php:251
+msgid "Save Options"
+msgstr ""
+
+#: inc/options-framework/options-framework.php:252
+msgid "Restore Defaults"
+msgstr ""
+
+#: inc/options-framework/options-framework.php:252
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: inc/options-framework/options-framework.php:284
+msgid "Default options restored."
+msgstr ""
+
+#: inc/options-framework/options-framework.php:338
+msgid "Options saved."
+msgstr ""
+
+#: inc/options-framework/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr ""
+
+#: inc/options-framework/options-media-uploader.php:54
+#: inc/options-framework/options-media-uploader.php:111
+msgid "Upload"
+msgstr ""
+
+#: inc/options-framework/options-media-uploader.php:56
+#: inc/options-framework/options-media-uploader.php:112
+msgid "Remove"
+msgstr ""
+
+#: inc/options-framework/options-media-uploader.php:59
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: inc/options-framework/options-media-uploader.php:83
+msgid "View File"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:232
+msgid "No Repeat"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:235
+msgid "Repeat All"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:248
+msgid "Top Left"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:249
+msgid "Top Center"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:250
+msgid "Top Right"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:251
+msgid "Middle Left"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:252
+msgid "Middle Center"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:253
+msgid "Middle Right"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:344
+msgid "Normal"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:345
+msgid "Italic"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:346
+msgid "Bold"
+msgstr ""
+
+#: inc/options-framework/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr ""
+
+#: inc/options-functions.php:21 inc/options.php:54
 msgid "A Semantic Personal Publishing Platform"
 msgstr ""
 
-#: inc/options-functions.php:74 inc/options.php:56
+#: inc/options-functions.php:23 inc/options.php:56
 msgid "Theme: Visual"
 msgstr ""
 
@@ -190,38 +321,34 @@ msgid "This text will go in the footer of the theme.  If you leave it completely
 msgstr ""
 
 #: inc/options.php:80
-msgid "Read the <a href=\"%1$s\">documentation</a>."
+msgid "View the <a href=\"%1$s\">documentation</a>."
 msgstr ""
 
 #: inc/options.php:84
-msgid "General questions can be asked in the WordPress <a href=\"%1$s\">forums</a>."
-msgstr ""
-
-#: inc/options.php:88
 msgid "Specific questions about the Visual theme can be asked in the <a href=\"%1$s\">Visual</a> forum."
 msgstr ""
 
-#: inc/options.php:92
-msgid "Hope you enjoy this theme!  <a href=\"%1$s\">Ratings</a> are always appreciated."
+#: inc/options.php:88
+msgid "If you'd like to support the theme and/or get a version with more features, please <a href=\"%1$s\">see Visual+</a>."
 msgstr ""
 
-#: inc/options.php:99
+#: inc/options.php:95
 msgid "About Visual"
 msgstr ""
 
-#: inc/options.php:140
+#: inc/options.php:135
 msgid "Style"
 msgstr ""
 
-#: inc/options.php:155
+#: inc/options.php:150
 msgid "Minimal"
 msgstr ""
 
-#: inc/options.php:156
+#: inc/options.php:151
 msgid "Light"
 msgstr ""
 
-#: inc/options.php:157
+#: inc/options.php:152
 msgid "Dark"
 msgstr ""
 
@@ -325,7 +452,7 @@ msgid "http://wptheming.com/2013/03/visual-theme/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Visual is a well-crafted responsive theme designed to showcase images, artwork and photgraphy in a flexible grid layout.  Alternative styles (both light and dark) are available to select in the options panel.  An icon font ensures crisp display on retina devices and quick load times.  It's simple for new users to set up.  Developers can easily extend the code in a child theme.  For more information and a theme demo, visit: http://wptheming.com/?p=5277."
+msgid "Visual is a well-crafted responsive theme designed to showcase images, artwork and photgraphy in a smart grid layout.  Alternative styles (both light and dark) are available to select in the options panel.  An icon font ensures crisp display on retina devices and quick load times.  It's simple for new users to set up.  Developers can easily extend the code in a child theme.  For more information and a theme demo, visit: http://wptheming.com/?p=5277."
 msgstr ""
 
 #. Author of the plugin/theme

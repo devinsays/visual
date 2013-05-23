@@ -132,7 +132,15 @@ pre {
 
 @media screen and (max-width: 790px) {
 	.main-navigation .menu {
-		border-top: 1px solid #e9e9e9;
+		border-top: none;
+	}
+	.main-navigation li {
+		border:none;
+		border-top:1px solid #e5e5e5;
+	}
+	.main-navigation ul ul {
+		left:0;
+		border:none;
 	}
 }
 

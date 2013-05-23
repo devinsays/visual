@@ -1,7 +1,11 @@
-Development
+Complete list of commits can be found at:
+https://github.com/devinsays/visual/commits/master
+
+Visual 0.5
 
 - Updates for widget padding
 - Fix for masonry margins
+- Better menus for small screen sizes
 
 Visual 0.4
 
