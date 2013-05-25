@@ -158,6 +158,16 @@ pre {
 /* =Responsive
 ----------------------------------------------- */
 @media screen and (max-width: 790px) {
+  .main-navigation ul ul {
+    left: 0;
+    border: none;
+  }
+
+  .main-navigation .menu {
+    border-top: 1px solid #e5e5e5;
+  }
+}
+@media screen and (max-width: 490px) {
   .main-navigation .menu {
     border-top: none;
   }
@@ -165,11 +175,6 @@ pre {
   .main-navigation li {
     border: none;
     border-top: 1px solid #e5e5e5;
-  }
-
-  .main-navigation ul ul {
-    left: 0;
-    border: none;
   }
 }
 /* =Retina
