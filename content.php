@@ -23,10 +23,16 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'visual' ), 'after' => '</div>' ) ); ?>
+	</div><!-- .entry-summary -->
+	<?php else : ?>
+	<div class="entry-content">
+		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'visual' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">', 'after' => '</div>', 'link_before' => '<span class="active-link">', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
+	<?php endif; ?>
 
 	<footer class="entry-meta clearfix">
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
