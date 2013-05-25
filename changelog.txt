@@ -3,7 +3,8 @@ https://github.com/devinsays/visual/commits/master
 
 Visual 0.6
 
-- Display full content by default
+- Display full content by default on archives
+- Added full-width page template
 
 Visual 0.5
 
