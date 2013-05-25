@@ -939,13 +939,18 @@ footer.entry-meta {
   padding: 5px 20px 0;
 }
 
+.widget_search #s {
+  max-width: 65%;
+}
+
 .widget_search input[type="submit"] {
-  padding: 3px 12px 4px;
+  max-width: 30%;
+  padding: 5px 12px 6px;
 }
 
 .widget_search input[type="submit"]:active {
   margin-top: -1px;
-  padding: 4px 12px 3px;
+  padding: 6px 12px 5px;
 }
 
 /* Calendar widget */

@@ -235,6 +235,16 @@ footer.entry-meta a:hover {
   border-bottom: 1px solid #161616;
 }
 
+.widget_search input[type="submit"] {
+  padding: 3px 12px 4px;
+}
+
+.widget_search input[type="submit"]:active {
+  margin-top: -1px;
+  padding: 4px 12px 3px;
+  color: #f9f9f9;
+}
+
 /* =Media
 ----------------------------------------------- */
 .wp-caption {
