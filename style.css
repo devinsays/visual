@@ -783,7 +783,7 @@ pre {
 }
 
 footer.entry-meta {
-  padding: 10px 15px;
+  padding: 15px 15px;
 }
 
 .sticky {
@@ -876,16 +876,12 @@ footer.entry-meta {
   font-size: 16px;
   font-size: 1.6rem;
   margin-bottom: 10px;
+  padding: 6px 20px;
 }
 
 .widget-title:after {
   content: "";
   display: block;
-}
-
-.widget-title span {
-  display: block;
-  padding: 6px 20px;
 }
 
 .widget-area ul {
@@ -936,7 +932,7 @@ footer.entry-meta {
 
 /* Search widget */
 .widget_search #searchform {
-  padding: 5px 20px 0;
+  padding: 20px 20px 0;
 }
 
 .widget_search #s {

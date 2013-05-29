@@ -13,6 +13,17 @@
  */
 if ( ! isset( $content_width ) )
 	$content_width = 670; /* pixels */
+
+function visual_content_width() {
+	global $content_width;
+
+	if ( is_home() || is_search() || is_archive() )
+		$content_width = 326;
+
+	if ( is_page_template( 'page-fullwidth.php' ) )
+		$content_width = 990;
+}
+add_action( 'template_redirect', 'visual_content_width' );
 	
 /**
  * Loads Options Framework for theme options
