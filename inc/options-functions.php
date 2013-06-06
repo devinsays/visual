@@ -65,3 +65,27 @@ function visual_style()   {
 }
 
 add_action( 'wp_enqueue_scripts', 'visual_style' );
+
+/**
+ * Note about theme changes
+ *
+ * @since Visual 0.6
+ */
+ 
+function visual_theme_notice() {
+	global $pagenow;
+	$default =  get_template_directory_uri() . '/css/dark.css';
+	$style = visual_get_option( 'visual_style' );
+	$msg = sprintf(
+		'Visual will only have the "Dark" color palette in the next release.  To keep your current color scheme, consider <a href="%1$s">purchasing Visual+</a> or <a href="%2$s">contact me</a> for a free upgrade.',
+		esc_url( 'http://wptheming.com/visual/' ),
+		esc_url( 'http://wptheming.com/contact/' )
+	);
+	if ( $pagenow == 'themes.php' ) {
+		if ( $style != $default ) {
+			echo '<div class="updated"><p>' . $msg . '</p></div>';
+		}
+    }
+}
+
+add_action( 'admin_notices', 'visual_theme_notice' );

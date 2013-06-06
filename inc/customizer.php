@@ -10,7 +10,7 @@
 /**
  * Enable options in the theme customizer
  *
- * @since Visual 0.3
+ * @since Visual 0.6
  */
 
 function visual_customizer_register( $wp_customize ) {
@@ -30,30 +30,39 @@ function visual_customizer_register( $wp_customize ) {
 	    }
 	}
 	
-	$path =  get_template_directory_uri();
+	// These style options will be removed in the next version of the theme
+	// Unless an alternate color palette is in use, these options will not display
 	
-	// Style Section
-	$wp_customize->add_section( 'visual_style', array(
-		'title' => __( 'Style', 'visual' ),
-        'priority' => 100
-    ) );
-
-    $wp_customize->add_setting( 'visual-theme[visual_style]', array(
-    	'default' => $path . '/css/dark.css',
-    	'type' => 'option'
-    ) );
-
-    $wp_customize->add_control( 'visual_style', array(
-    	'label' => __( 'Visual Style', 'visual' ),
-    	'section' => 'visual_style',
-    	'settings' => 'visual-theme[visual_style]',
-    	'type' => 'select',
-    	'choices' => array(
-			'minimal' => __( 'Minimal', 'visual'),
-			$path . '/css/light.css' => __( 'Light', 'visual'),
-			$path . '/css/dark.css' => __( 'Dark', 'visual')
-			)
-    ) );
+	$path = get_template_directory_uri();
+	$default_style =  $path . '/css/dark.css';
+	$style = visual_get_option( 'visual_style' );
+	
+	if ( $style != $default_style ) {
+	
+		// Style Section
+		$wp_customize->add_section( 'visual_style', array(
+			'title' => __( 'Style', 'visual' ),
+	        'priority' => 100
+	    ) );
+	
+	    $wp_customize->add_setting( 'visual-theme[visual_style]', array(
+	    	'default' => get_template_directory_uri() . '/css/dark.css',
+	    	'type' => 'option'
+	    ) );
+	
+	    $wp_customize->add_control( 'visual_style', array(
+	    	'label' => __( 'Visual Style', 'visual' ),
+	    	'section' => 'visual_style',
+	    	'settings' => 'visual-theme[visual_style]',
+	    	'type' => 'select',
+	    	'choices' => array(
+				'minimal' => __( 'Minimal', 'visual'),
+				$path . '/css/light.css' => __( 'Light', 'visual'),
+				$path . '/css/dark.css' => __( 'Dark', 'visual')
+				)
+	    ) );
+    
+    }
     
 	// Style header
 	$wp_customize->add_section( 'visual_footer', array(
@@ -70,7 +79,8 @@ function visual_customizer_register( $wp_customize ) {
     );
     
     $wp_customize->add_setting( 'visual-theme[footer_text]', array(
-    	'default' => $footer_text
+    	'default' => $footer_text,
+    	'type' => 'option'
 	) );
 
     $wp_customize->add_control( new Visual_Textarea_Control (

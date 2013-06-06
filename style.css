@@ -3,11 +3,11 @@ Theme Name: Visual
 Theme URI: http://wptheming.com/2013/03/visual-theme/
 Author: Devin Price
 Author URI: http://wptheming.com
-Description: Visual is a well-crafted responsive theme designed to showcase images, artwork and photgraphy in a smart grid layout.  Alternative styles (both light and dark) are available to select in the options panel.  An icon font ensures crisp display on retina devices and quick load times.  It's simple for new users to set up.  Developers can easily extend the code in a child theme.  For more information and a theme demo, visit: http://wptheming.com/?p=5277.
-Version: 0.5
+Description: Visual is a well-crafted responsive theme designed to showcase images, artwork and photgraphy in a smart grid layout.  An icon font ensures crisp display on retina devices and quick load times.  It's simple for new users to set up.  Developers can easily extend the code in a child theme.  For more information and a theme demo, visit: http://wptheming.com/?p=5277.
+Version: 0.6
 License: GNU General Public License
 License URI: license.txt
-Tags: flexible-width, featured-images, post-formats, translation-ready, photoblogging, theme-options, dark, light
+Tags: flexible-width, featured-images, post-formats, translation-ready, photoblogging, theme-options, dark
 
 This theme, like WordPress, is licensed under the GPL.
 Have fun customizing it and sharing your work with others!
@@ -224,7 +224,7 @@ code, kbd, tt, var {
 }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666666;
+  border-bottom: 1px dotted #666;
   cursor: help;
 }
 
@@ -490,8 +490,6 @@ a {
   text-decoration: none;
   -webkit-transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
-  -ms-transition: color 0.2s ease-out;
-  -o-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
 }
 
@@ -503,7 +501,7 @@ a:active {
 
 input[type="text"],
 textarea {
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   padding: 5px;
   border-radius: 3px;
   outline: 0;
@@ -645,7 +643,7 @@ pre {
 .main-navigation ul ul li {
   border: none;
   float: none;
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid #f5f5f5;
 }
 
 .main-navigation ul ul li a {
@@ -710,8 +708,6 @@ pre {
 .masonry .hentry {
   -webkit-transition: height, width 0.2s;
   -moz-transition: height, width 0.2s;
-  -ms-transition: height, width 0.2s;
-  -o-transition: height, width 0.2s;
   transition: height, width 0.2s;
 }
 
@@ -731,7 +727,7 @@ pre {
   margin: 0 0 20px 0;
   border-radius: 3px;
   background: #fff;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   overflow: hidden;
 }
 
@@ -752,8 +748,8 @@ pre {
 
 .entry-content {
   padding: 20px 15px 10px;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .entry-content h1,
@@ -793,7 +789,7 @@ footer.entry-meta {
 /* =Archives
 ----------------------------------------------- */
 .page-header {
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   border-radius: 3px;
   margin-bottom: 20px;
   padding: 15px;
@@ -868,7 +864,7 @@ footer.entry-meta {
   margin: 0 0 1.5em;
   padding: 0 0 1.5em;
   overflow: hidden;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
 }
 
 .widget-title {
@@ -1007,7 +1003,7 @@ img.size-full {
 
 .wp-caption {
   background: #f9f9f9;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   margin-bottom: 15px;
   max-width: 100%;
 }

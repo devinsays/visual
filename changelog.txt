@@ -6,6 +6,7 @@ Visual 0.6
 - Display full content by default on archives
 - Added full-width page template
 - Replace Options Framework with theme customizer
+- Remove color palette option unless alternate is in use
 
 Visual 0.5
 
