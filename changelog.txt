@@ -5,6 +5,7 @@ Visual 0.6
 
 - Display full content by default on archives
 - Added full-width page template
+- Replace Options Framework with theme customizer
 
 Visual 0.5
 

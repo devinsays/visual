@@ -23,7 +23,7 @@ function optionsframework_option_name() {
 /**
  * Theme options array
  *
- * @since Visual 0.3
+ * @since Visual 0.5
  */
 
 function optionsframework_options() {
@@ -65,58 +65,6 @@ function optionsframework_options() {
 	);
 
 	return $options;
-}
- 
-/**
- * Adds the html that will appear in the sidebar module of the options panel.
- *
- * @since Visual 0.3
- */
-
-add_action( 'optionsframework_after','visual_options_panel_markup' );
-
-function visual_options_panel_markup() {
-	
-	$text[0] = sprintf( __( 'View the <a href="%1$s">documentation</a>.', 'visual' ),
-	esc_url( 'http://wptheming.com/2013/03/visual-theme/' )
-	);
-	
-	$text[1] = sprintf( __( 'Specific questions about the Visual theme can be asked in the <a href="%1$s">Visual</a> forum.', 'visual' ),
-		esc_url( 'http://wordpress.org/support/theme/visual' )
-	);
-	
-	$text[2] = sprintf( __( 'If you\'d like to support the theme and/or get a version with more features, please <a href="%1$s">see Visual+</a>.', 'visual' ),
-		esc_url( 'wptheming.com/visual' )
-	);
-	?>
-	<div id="optionsframework-sidebar">
-		<div class="metabox-holder">
-			<div class="postbox">
-				<h3><?php _e('About Visual', 'visual'); ?></h3>
-					<div class="inside">
-						<p><?php echo $text[0]; ?></p>
-						<p><?php echo $text[1]; ?></p>
-						<p><?php echo $text[2]; ?></p>
-					</div>
-			</div>
-		</div>
-	</div>
-<?php }
- 
-/**
- * Loads an additional CSS file for the options panel
- *
- * @since Visual 0.3
- */
- 
- if ( is_admin() ) {
-    $of_page= 'appearance_page_options-framework';
-    add_action( "admin_print_styles-$of_page", 'visual_options_panel_styles', 100);
-}
- 
-function visual_options_panel_styles () {
-	wp_register_style( 'visual_options_panel_styles', get_stylesheet_directory_uri() .'/inc/options-panel-styles.css' );
-	wp_enqueue_style( 'visual_options_panel_styles' );
 }
 
 /**

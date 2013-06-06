@@ -6,6 +6,26 @@
  * @since Visual 0.3
  */
 
+
+/**
+ * Returns individual array items from the "visual-theme" option
+ *
+ * @since Visual 0.5
+ */
+ 
+function visual_get_option( $name, $default = false ) {
+
+	if ( get_option('visual-theme') ) {
+		$options = get_option('visual-theme');
+	}
+
+	if ( isset( $options[$name] ) ) {
+		return $options[$name];
+	} else {
+		return $default;
+	}
+}
+
 /**
  * Option to update footer text
  *
@@ -26,7 +46,7 @@ function visual_return_footer_text() {
 }
 
 function visual_footer_text() {
-    $footer_text = of_get_option( 'footer_text', visual_return_footer_text() );
+    $footer_text = visual_get_option( 'footer_text', visual_return_footer_text() );
     echo $footer_text;
 }
 
@@ -39,8 +59,8 @@ add_action( 'visual_footer_text', 'visual_footer_text' );
  */
 
 function visual_style()   {
-	if ( of_get_option('visual_style') && of_get_option('visual_style') != 'minimal' ) {
-		wp_enqueue_style( 'visual_style', of_get_option('visual_style'), array(), null );
+	if ( visual_get_option('visual_style') && visual_get_option('visual_style') != 'minimal' ) {
+		wp_enqueue_style( 'visual_style', visual_get_option('visual_style'), array(), null );
 	}
 }
 

@@ -24,20 +24,6 @@ function visual_content_width() {
 		$content_width = 990;
 }
 add_action( 'template_redirect', 'visual_content_width' );
-	
-/**
- * Loads Options Framework for theme options
- * See: https://github.com/devinsays/options-framework-theme
- *
- * @since Visual 0.4
- */
-function visual_optionsframework_setup() {
-	if ( !function_exists( 'optionsframework_init' ) ) {
-		define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/options-framework/' );
-		require_once( get_template_directory() . '/inc/options-framework/options-framework.php');
-	}
-}
-add_action( 'after_setup_theme', 'visual_optionsframework_setup' );
 
 /*
  * Load Jetpack compatibility file.
@@ -66,11 +52,6 @@ function visual_setup() {
 	 * Custom functions that act independently of the theme templates
 	 */
 	require( get_template_directory() . '/inc/extras.php' );
-	
-	/**
-	 * Loads options for theme customizer
-	 */
-	require_once( get_template_directory() . '/inc/options.php' );
 	
 	/**
 	 * Functions to enable the options
@@ -196,15 +177,3 @@ function visual_body_class( $classes ) {
 }
 
 add_filter('body_class','visual_body_class');
-
-/**
- * Loads options.php from "inc" directory
- *
- * @since Visual 0.3
- */
- 
-function visual_options_location() {
-	return array('/inc/options.php');
-}
-
-add_filter ( 'options_framework_location', 'visual_options_location' );
