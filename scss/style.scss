@@ -383,9 +383,6 @@ footer.entry-meta {
 /* =Asides
 ----------------------------------------------- */
 
-/* =Asides
------------------------------------------------ */
-
 .widget {
 	background: #fff;
 	border-radius: 3px;
@@ -482,6 +479,17 @@ table#wp-calendar {
 }
 #wp-calendar #next {
 	text-align: right;
+}
+
+/* =404
+----------------------------------------------- */
+
+.error404 .widget_recent_entries {
+	border:none;
+}
+.error404 .widget_recent_entries ul {
+	list-style: none;
+	margin-left:0;
 }
 
 /* =Media

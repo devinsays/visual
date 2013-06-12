@@ -3,8 +3,9 @@ https://github.com/devinsays/visual/commits/master
 
 Visual 0.7
 
-- Fix entry-summary paddings on search page
-- Fix widget title underlines
+- Update entry-summary styles on search page
+- Update widget title styles
+- Update 404 page widget styling
 
 Visual 0.6
 
