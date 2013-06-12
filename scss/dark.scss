@@ -148,7 +148,7 @@ footer.entry-meta .post-link a:hover {
 .entry-meta a {
 	color: #ddd;
 }
-.entry-content {
+.entry-content, .entry-summary {
 	border-top: 1px solid #363636;
 	border-bottom: 1px solid #161616;
 }
@@ -200,9 +200,6 @@ footer.entry-meta a:hover {
 	border: none;
 }
 #secondary .widget-title {
-	border-bottom: 1px solid #363636;
-}
-#secondary .widget-title:after {
 	border-bottom: 1px solid #161616;
 }
 .widget_search input[type="submit"] {

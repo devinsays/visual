@@ -746,7 +746,7 @@ pre {
   font-size: 1.3rem;
 }
 
-.entry-content {
+.entry-content, .entry-summary {
   padding: 20px 15px 10px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;

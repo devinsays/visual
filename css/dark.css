@@ -30,25 +30,19 @@ textarea {
 
 input[type="submit"], input[type="button"], input[type="reset"] {
   background: #313131;
-  background: -webkit-linear-gradient(#323232 0%, #212121 100%);
-  background: -moz-linear-gradient(#323232 0%, #212121 100%);
-  background: -ms-linear-gradient(#323232 0%, #212121 100%);
-  background: -o-linear-gradient(#323232 0%, #212121 100%);
-  background: linear-gradient(#323232 0%, #212121 100%);
+  background: -webkit-linear-gradient( #323232 0%, #212121 100%);
+  background: linear-gradient( #323232 0%, #212121 100%);
   color: #fff;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000;
 }
 
 button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
   background: #212121;
-  background: -webkit-linear-gradient(#212121 0%, #323232 100%);
-  background: -moz-linear-gradient(#212121 0%, #323232 100%);
-  background: -ms-linear-gradient(#212121 0%, #323232 100%);
-  background: -o-linear-gradient(#212121 0%, #323232 100%);
-  background: linear-gradient(#212121 0%, #323232 100%);
+  background: -webkit-linear-gradient( #212121 0%, #323232 100%);
+  background: linear-gradient( #212121 0%, #323232 100%);
   border: none;
-  border-top: 2px solid black;
+  border-top: 2px solid #000;
 }
 
 pre {
@@ -114,9 +108,9 @@ mark, ins {
   background: #313131;
   top: 60px;
   left: -1px;
-  border-top: 1px solid #222222;
-  border-left: 1px solid #222222;
-  border-right: 1px solid #222222;
+  border-top: 1px solid #222;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
 }
 
 .main-navigation ul ul li {
@@ -173,13 +167,13 @@ footer.entry-meta .post-link a:hover {
   color: #ddd;
 }
 
-.entry-content {
+.entry-content, .entry-summary {
   border-top: 1px solid #363636;
   border-bottom: 1px solid #161616;
 }
 
 footer.entry-meta {
-  border-top: 1px solid #333333;
+  border-top: 1px solid #333;
 }
 
 footer.entry-meta a {
@@ -193,7 +187,7 @@ footer.entry-meta a:hover {
 /* =Archives
 ----------------------------------------------- */
 .page-header {
-  border: 1px solid #333333;
+  border: 1px solid #333;
   border-top: 1px solid #292929;
   box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -228,10 +222,6 @@ footer.entry-meta a:hover {
 }
 
 #secondary .widget-title {
-  border-bottom: 1px solid #363636;
-}
-
-#secondary .widget-title:after {
   border-bottom: 1px solid #161616;
 }
 
@@ -249,7 +239,7 @@ footer.entry-meta a:hover {
 ----------------------------------------------- */
 .wp-caption {
   background: #212121;
-  border: 1px solid #333333;
+  border: 1px solid #333;
 }
 
 /* =Comments

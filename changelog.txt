@@ -1,6 +1,11 @@
 Complete list of commits can be found at:
 https://github.com/devinsays/visual/commits/master
 
+Visual 0.7
+
+- Fix entry-summary paddings on search page
+- Fix widget title underlines
+
 Visual 0.6
 
 - Display full content by default on archives
