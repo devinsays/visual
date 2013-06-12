@@ -64,7 +64,26 @@ function visual_customizer_register( $wp_customize ) {
     
     }
     
-	// Style header
+	// Excerpts
+	$wp_customize->add_section( 'visual_excerpts', array(
+		'title' => __( 'Excerpts', 'visual' ),
+        'priority' => 200
+    ) );
+    
+	$wp_customize->add_setting( 'visual-theme[display_excerpts]', array(
+    	'default' => false,
+    	'type' => 'option'
+	) );
+    
+    $wp_customize->add_control( 'display_excerpts', array(
+        'label' => __( 'Display excerpts on archives', 'visual' ),
+        'section' => 'visual_excerpts',
+		'settings' => 'visual-theme[display_excerpts]',
+		'type' => 'checkbox'
+    ) );
+    
+    
+	// Footer
 	$wp_customize->add_section( 'visual_footer', array(
 		'title' => __( 'Footer Text', 'visual' ),
         'priority' => 200

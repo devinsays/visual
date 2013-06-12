@@ -6,6 +6,7 @@ Visual 0.7
 - Update entry-summary styles on search page
 - Update widget title styles
 - Update 404 page widget styling
+- Option to display full content or excerpts on archives
 
 Visual 0.6
 

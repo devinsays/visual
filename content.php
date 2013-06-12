@@ -22,10 +22,14 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+	
+	<?php $options = get_option( 'visual-theme', false );
+	$excerpts = false;
+	if ( $options['display_excerpts'] ) { $excerpts = true; } ?>
+	<?php if ( is_search() || $excerpts ) : ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">', 'after' => '</div>', 'link_before' => '<span class="active-link">', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
