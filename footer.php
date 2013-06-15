@@ -8,9 +8,9 @@
  * @since Visual 0.1
  */
 ?>
-		<div class="section clearfix">
+		</div> <!-- .section -->
 	</div><!-- #main .site-main -->
-	
+	<div id="push"></div>
 </div><!-- #page .hfeed .site -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">

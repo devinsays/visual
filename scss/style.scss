@@ -87,6 +87,24 @@ pre {
 	border-radius: 6px;
 }
 
+/* =Sticky Footer
+----------------------------------------------- */
+
+html, body {
+	height: 100%; /* For sticky footer */
+}
+/* Wrapper for page content to push down footer */
+#page {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -52px;
+}
+#push {
+	height:52px;
+}
+
 /* =Structure
 ----------------------------------------------- */
 

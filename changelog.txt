@@ -1,6 +1,10 @@
 Complete list of commits can be found at:
 https://github.com/devinsays/visual/commits/master
 
+Visual 0.8
+
+- Sticky footer
+
 Visual 0.7
 
 - Update entry-summary styles on search page
