@@ -35,9 +35,9 @@ function visual_customizer_register( $wp_customize ) {
 	
 	$path = get_template_directory_uri();
 	$default_style =  $path . '/css/dark.css';
-	$style = visual_get_option( 'visual_style' );
+	$style = visual_get_option( 'visual_style', false );
 	
-	if ( $style != $default_style ) {
+	if ( $style && ( $style != $default ) ) {
 	
 		// Style Section
 		$wp_customize->add_section( 'visual_style', array(
