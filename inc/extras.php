@@ -97,3 +97,22 @@ class Visual_Nav_Walker extends Walker_Nav_Menu {
 	}
 	
 }
+
+/**
+ * Adds featured images to the RSS Feeds
+ *
+ * @package Visual
+ * @since Visual 0.9
+ */
+ 
+function visual_rss( $content ) {
+	if ( has_post_thumbnail() ) {
+		global $post;
+		$image = '<p>' . get_the_post_thumbnail( $post->ID, 'visual-thumbnail' ) . '</p>';
+		$content = $image . $content;
+	}
+	return $content;
+}
+
+add_filter( 'the_excerpt_rss', 'visual_rss' );
+add_filter( 'the_content_feed', 'visual_rss' );
