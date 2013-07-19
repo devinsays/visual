@@ -1,6 +1,10 @@
 Complete list of commits can be found at:
 https://github.com/devinsays/visual/commits/master
 
+Visual 0.9
+
+- Remove light.css from codebase
+
 Visual 0.8
 
 - Sticky footer
