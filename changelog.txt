@@ -5,6 +5,7 @@ Visual 0.9
 
 - Remove light.css from codebase
 - Add featured images to the RSS feeds
+- Added RTL stylesheet
 
 Visual 0.8
 
