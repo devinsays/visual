@@ -22,7 +22,7 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-	
+
 	<?php $options = get_option( 'visual-theme', false );
 	$excerpts = false;
 	if ( $options['display_excerpts'] ) { $excerpts = true; } ?>
@@ -41,8 +41,7 @@
 	<footer class="entry-meta clearfix">
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 		<span class="comments-link">
-		<?php comments_popup_link( '', '', '', 'icon-comment' ); ?>
-		<?php comments_popup_link( __( 'Comment', 'visual' ), __( '1 Comment', 'visual' ), __( ' % Comments', 'visual' ) ); ?>
+			<?php comments_popup_link( __( 'Comment', 'visual' ), __( '1 Comment', 'visual' ), __( ' % Comments', 'visual' ), 'icon-comment' ); ?>
 		</span>
 		<?php endif; ?>
 		<span class="post-link">

@@ -6,6 +6,7 @@ Visual 1.0
 - Better Jetpack infinite scroll reloading
 - Fix theme warning when $meta_text was undefined
 - Remove unused images
+- Simplify comments-link markup
 
 Visual 0.9
 
