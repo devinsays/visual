@@ -1,6 +1,10 @@
 Complete list of commits can be found at:
 https://github.com/devinsays/visual/commits/master
 
+Visual 1.1
+
+- Fix developer notice when excerpt option not set
+
 Visual 1.0
 
 - Better Jetpack infinite scroll reloading

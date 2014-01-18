@@ -5,12 +5,13 @@
  * @package Visual
  * @since Visual 0.1
  */
-	 
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
  * @since Visual 0.1
  */
+
 if ( ! isset( $content_width ) )
 	$content_width = 670; /* pixels */
 
@@ -52,7 +53,7 @@ function visual_setup() {
 	 * Custom functions that act independently of the theme templates
 	 */
 	require( get_template_directory() . '/inc/extras.php' );
-	
+
 	/**
 	 * Functions to enable the options
 	 */
@@ -104,7 +105,7 @@ add_action( 'after_setup_theme', 'visual_setup' );
  *
  * @since Visual 0.1
  */
- 
+
 function visual_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Sidebar', 'visual' ),
@@ -123,7 +124,7 @@ add_action( 'widgets_init', 'visual_widgets_init' );
  *
  * @since Visual 0.1
  */
- 
+
 function visual_scripts() {
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
@@ -135,13 +136,13 @@ function visual_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130220' );
 	}
-	
+
 	if ( !is_singular() && !is_404() && !is_author() ) {
 		wp_enqueue_script( 'visual-masonry', get_template_directory_uri() . '/js/jquery.masonry.min.js', array( 'jquery' ), '20130220', true );
 	}
-	
+
 	wp_enqueue_script( 'visual-scripts', get_template_directory_uri() . '/js/visual-scripts.js', array( 'jquery' ), '20130220', true );
-	
+
 }
 
 add_action( 'wp_enqueue_scripts', 'visual_scripts' );
@@ -169,7 +170,7 @@ add_action( 'wp_enqueue_scripts', 'visual_fonts' );
  *
  * @since Visual 0.1
  */
- 
+
 function visual_body_class( $classes ) {
 	if ( !is_singular() && !is_404() && !is_author() )
 		$classes[] = 'masonry';

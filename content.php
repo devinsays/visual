@@ -23,9 +23,13 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php $options = get_option( 'visual-theme', false );
+	<?php
+	$options = get_option( 'visual-theme', false );
 	$excerpts = false;
-	if ( $options['display_excerpts'] ) { $excerpts = true; } ?>
+	if ( $options && $options['display_excerpts'] ) {
+		$excerpts = true;
+	}
+	?>
 	<?php if ( is_search() || $excerpts ) : ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
