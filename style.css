@@ -575,6 +575,7 @@ html, body {
 #masthead {
   background: #eee;
   margin-bottom: 20px;
+  position: relative;
 }
 
 #masthead .section {
