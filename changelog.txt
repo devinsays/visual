@@ -5,6 +5,7 @@ Visual 1.1
 
 - Fix developer notice when excerpt option not set
 - Fix mobile menu when wpadminbar is visible
+- Remove navigation walker
 
 Visual 1.0
 
