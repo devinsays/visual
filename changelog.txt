@@ -7,6 +7,9 @@ Visual 1.1
 - Fix mobile menu when wpadminbar is visible
 - Remove navigation walker
 - Better support for tweet embeds in masonry layout
+- Update screenshot
+- Update theme tags
+- Remove stylesheet options that are no longer in theme
 
 Visual 1.0
 

@@ -17,7 +17,7 @@ function visual_customizer_register( $wp_customize ) {
 
 	class Visual_Textarea_Control extends WP_Customize_Control {
 	    public $type = 'textarea';
-	 
+
 	    public function render_content() {
 	        ?>
 	        <label>
@@ -29,66 +29,32 @@ function visual_customizer_register( $wp_customize ) {
 	        <?php
 	    }
 	}
-	
-	// These style options will be removed in the next version of the theme
-	// Unless an alternate color palette is in use, these options will not display
-	
-	$path = get_template_directory_uri();
-	$default_style =  $path . '/css/dark.css';
-	$style = visual_get_option( 'visual_style', false );
-	
-	if ( $style && ( $style != $default ) ) {
-	
-		// Style Section
-		$wp_customize->add_section( 'visual_style', array(
-			'title' => __( 'Style', 'visual' ),
-	        'priority' => 100
-	    ) );
-	
-	    $wp_customize->add_setting( 'visual-theme[visual_style]', array(
-	    	'default' => get_template_directory_uri() . '/css/dark.css',
-	    	'type' => 'option'
-	    ) );
-	
-	    $wp_customize->add_control( 'visual_style', array(
-	    	'label' => __( 'Visual Style', 'visual' ),
-	    	'section' => 'visual_style',
-	    	'settings' => 'visual-theme[visual_style]',
-	    	'type' => 'select',
-	    	'choices' => array(
-				'minimal' => __( 'Minimal', 'visual'),
-				$path . '/css/light.css' => __( 'Light', 'visual'),
-				$path . '/css/dark.css' => __( 'Dark', 'visual')
-				)
-	    ) );
-    
-    }
-    
+
 	// Excerpts
 	$wp_customize->add_section( 'visual_excerpts', array(
 		'title' => __( 'Excerpts', 'visual' ),
         'priority' => 200
     ) );
-    
+
 	$wp_customize->add_setting( 'visual-theme[display_excerpts]', array(
     	'default' => false,
     	'type' => 'option'
 	) );
-    
+
     $wp_customize->add_control( 'display_excerpts', array(
         'label' => __( 'Display excerpts on archives', 'visual' ),
         'section' => 'visual_excerpts',
 		'settings' => 'visual-theme[display_excerpts]',
 		'type' => 'checkbox'
     ) );
-    
-    
+
+
 	// Footer
 	$wp_customize->add_section( 'visual_footer', array(
 		'title' => __( 'Footer Text', 'visual' ),
         'priority' => 200
     ) );
-    
+
 	$footer_text = sprintf(
 		'<a href="%1$s" title="%2$s" rel="generator">WordPress</a> <a href="%3$s">%4$s</a>',
 		esc_url( 'http://wordpress.org' ),
@@ -96,7 +62,7 @@ function visual_customizer_register( $wp_customize ) {
 		esc_url( 'http://wptheming.com' ),
 		__( 'Theme: Visual', 'visual' )
     );
-    
+
     $wp_customize->add_setting( 'visual-theme[footer_text]', array(
     	'default' => $footer_text,
     	'type' => 'option'
@@ -111,7 +77,7 @@ function visual_customizer_register( $wp_customize ) {
 			)
 		)
 	);
-    
+
 }
 
 add_action( 'customize_register', 'visual_customizer_register' );
