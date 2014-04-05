@@ -77,34 +77,12 @@ function visual_wp_title( $title, $sep ) {
 add_filter( 'wp_title', 'visual_wp_title', 10, 2 );
 
 /**
- * Extends the navigation to add a class for drop down menus
- *
- * Adapted from code by Paul de Wouters in the Spine Theme
- * https://github.com/pdewouters/spine-theme/blob/master/includes/topbar-walker.php
- *
- * @package Visual
- * @since Visual 0.2
- */
-
-class Visual_Nav_Walker extends Walker_Nav_Menu {
-
-	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
-		$id_field = $this->db_fields['id'];
-		if ( !empty( $children_elements[$element->$id_field] ) && ( $depth == 0 ) ) {
-			$element->classes[] = 'has-children'; // Use any classname you like
-		}
-		Walker_Nav_Menu::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
-	}
-	
-}
-
-/**
  * Adds featured images to the RSS Feeds
  *
  * @package Visual
  * @since Visual 0.9
  */
- 
+
 function visual_rss( $content ) {
 	if ( has_post_thumbnail() ) {
 		global $post;
