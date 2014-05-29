@@ -4,7 +4,7 @@ Theme URI: http://wptheming.com/2013/03/visual-theme/
 Author: Devin Price
 Author URI: http://wptheming.com
 Description: Visual is a well-crafted responsive theme designed to showcase images, artwork and photgraphy in a smart grid layout.  An icon font ensures crisp display on retina devices and quick load times.  It's simple for new users to set up.  Developers can easily extend the code in a child theme.  For more information and a theme demo, visit: http://wptheming.com/?p=5277.
-Version: 1.1
+Version: 1.2.0
 License: GNU General Public License
 License URI: license.txt
 Tags: responsive-layout, fluid-layout, featured-images, post-formats, translation-ready, photoblogging, theme-options, dark
@@ -16,8 +16,6 @@ Originally built off the _s theme:
 underscores.me
 
 */
-
-@import "bourbon";
 
 /* =Icon Font
 -------------------------------------------------------------- */
@@ -55,7 +53,7 @@ body {
 a {
 	color:#449ccc;
 	text-decoration: none;
-    @include transition (color 0.2s ease-out);
+    transition: color 0.2s ease-out;
 }
 a:hover,
 a:focus,
@@ -117,7 +115,7 @@ html, body {
 	float:left;
 	width:100%;
 	padding-right:320px;
-	@include box-sizing(border-box);
+	box-sizing: border-box;
 }
 #secondary {
 	float:left;
@@ -266,12 +264,10 @@ html, body {
 	float:left;
 	width:32%;
 	margin-right:1%;
+	transition: height, width 0.2s;
 }
 .masonry .hentry:nth-child(3) {
 	margin-right:0;
-}
-.masonry .hentry {
-    @include transition (height, width 0.2s);
 }
 .masonry .hentry img {
 	display:block;

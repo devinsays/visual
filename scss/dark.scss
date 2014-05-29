@@ -1,8 +1,6 @@
 /* =Dark Styles
 ----------------------------------------------- */
 
-@import "bourbon";
-
 $link: #40d7bc;
 
 body {
@@ -28,16 +26,18 @@ textarea {
 	border-top: none;
 	box-shadow: inset 0px 1px 1px 1px rgba(0,0,0,0.1);
 }
-input[type="submit"], input[type="button"], input[type="reset"] {
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
 	background: #313131;
-	@include background(linear-gradient(#323232 0%, #212121 100%));
+	background: linear-gradient( #323232 0%, #212121 100%);
 	color: #fff;
 	border: none;
 	border-bottom: 2px solid #000;
 }
 button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
 	background: #212121;
-	@include background(linear-gradient(#212121 0%, #323232 100%));
+	background: linear-gradient( #212121 0%, #323232 100%);
 	border: none;
 	border-top: 2px solid #000;
 }
@@ -154,7 +154,7 @@ footer.entry-meta .post-link a:hover {
 }
 footer.entry-meta {
 	border-top: 1px solid #333;
-	
+
 }
 footer.entry-meta a {
 	color: #ccc;
