@@ -7,6 +7,11 @@
  */
 
 /**
+ * Set constant for version
+ */
+define( 'VISUAL_VERSION', '1.2.0' );
+
+/**
  * Set the content width based on the theme's design and stylesheet.
  *
  * @since Visual 0.1
@@ -16,10 +21,10 @@ if ( ! isset( $content_width ) )
 	$content_width = 670; /* pixels */
 
 /**
- * Set constant for version
+ * Set different $content_width depending on template
+ *
+ * @since Visual 0.1
  */
-define( 'VISUAL_VERSION', '1.2.0' );
-
 function visual_content_width() {
 	global $content_width;
 
@@ -31,10 +36,6 @@ function visual_content_width() {
 }
 add_action( 'template_redirect', 'visual_content_width' );
 
-/*
- * Load Jetpack compatibility file.
- */
-require( get_template_directory() . '/inc/jetpack.php' );
 
 if ( ! function_exists( 'visual_setup' ) ) :
 
@@ -50,26 +51,6 @@ if ( ! function_exists( 'visual_setup' ) ) :
 function visual_setup() {
 
 	/**
-	 * Custom template tags for this theme.
-	 */
-	require( get_template_directory() . '/inc/template-tags.php' );
-
-	/**
-	 * Custom functions that act independently of the theme templates
-	 */
-	require( get_template_directory() . '/inc/extras.php' );
-
-	/**
-	 * Functions to enable the options
-	 */
-	require( get_template_directory() . '/inc/options-functions.php' );
-
-	/**
-	 * Customizer additions
-	 */
-	require( get_template_directory() . '/inc/customizer.php' );
-
-	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on Visual, use a find and replace
@@ -77,29 +58,30 @@ function visual_setup() {
 	 */
 	load_theme_textdomain( 'visual', get_template_directory() . '/languages' );
 
-	/**
-	 * Add default posts and comments RSS feed links to head
-	 */
+	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 
-	/**
-	 * Enable support for Post Thumbnails
-	 */
+	// Enable support for Post Thumbnails
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'visual-thumbnail', 326, 999 );
 	add_image_size( 'visual-post', 700, 9999 );
 
-	/**
-	 * This theme uses wp_nav_menu() in one location.
-	 */
+	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'visual' ),
 	) );
 
-	/**
-	 * Enable support for Post Formats
-	 */
+	// Enable support for Post Formats
 	add_theme_support( 'post-formats', array( 'image', 'gallery' ) );
+
+	// Enable support for HTML5 markup.
+	add_theme_support( 'html5', array(
+		'comment-list',
+		'search-form',
+		'comment-form',
+		'gallery',
+	) );
+
 }
 endif; // visual_setup
 
@@ -158,14 +140,8 @@ add_action( 'wp_enqueue_scripts', 'visual_scripts' );
  */
 
 function visual_fonts() {
-		$font_families = array();
-		$font_families[] = 'Raleway:400,700';
-		$protocol = is_ssl() ? 'https' : 'http';
-		$query_args = array(
-			'family' => implode( '|', $font_families ),
-			'subset' => 'latin,latin-ext',
-		);
-		wp_enqueue_style( 'visual-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
+		// Raleway
+		wp_enqueue_style( 'visual-fonts', '//fonts.googleapis.com/css?family=Raleway:400,700', array(), null, 'screen' );
 }
 add_action( 'wp_enqueue_scripts', 'visual_fonts' );
 
@@ -181,3 +157,28 @@ function visual_body_class( $classes ) {
 	return $classes;
 }
 add_filter('body_class','visual_body_class');
+
+/**
+ * Custom template tags for this theme.
+ */
+require( get_template_directory() . '/inc/template-tags.php' );
+
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require( get_template_directory() . '/inc/extras.php' );
+
+/**
+ * Functions to enable the options.
+ */
+require( get_template_directory() . '/inc/options-functions.php' );
+
+/**
+ * Customizer additions.
+ */
+require( get_template_directory() . '/inc/customizer.php' );
+
+/*
+ * Load Jetpack compatibility file.
+ */
+require( get_template_directory() . '/inc/jetpack.php' );
