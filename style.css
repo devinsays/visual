@@ -1072,14 +1072,65 @@ img.size-full {
   font-size: 1.3rem;
 }
 
-.site-content .gallery a img {
-  border: none;
-  height: auto;
-  max-width: 90%;
+.gallery-item {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-.site-content .gallery dd {
-  margin: 0;
+.gallery .gallery-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-caption {
+  font-size: 13px;
+  margin-top: 1em;
+  color: #999;
+}
+
+.gallery:before,
+.gallery:after {
+  content: " ";
+  display: table;
+}
+
+.gallery:after {
+  clear: both;
 }
 
 /* Make sure embeds and iframes fit their containers */
