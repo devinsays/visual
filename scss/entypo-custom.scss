@@ -22,8 +22,18 @@
 	text-decoration: inherit;
 }
 
-.icon-menu:before { content: '\2630'; }
-.icon-comment:before { content: '\e720'; }
-.icon-right-circled:before { content: '\f0a9'; }
-.icon-dropdown:before { content: '\e760'; }
-.icon-search:before { content: '\1f50d'; }
+.icon-menu:before {
+	content: '\2630';
+}
+.icon-comment:before {
+	content: '\e720';
+}
+.icon-right-circled:before {
+	content: '\f0a9';
+}
+.icon-dropdown:before {
+	content: '\e760';
+}
+.icon-search:before {
+	content: '\1f50d';
+}

@@ -61,13 +61,20 @@ a:active {
 	text-decoration: underline;
 }
 input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
 textarea {
 	border:1px solid #eee;
 	padding:5px;
 	border-radius: 3px;
 	outline: 0;
 }
-input[type="submit"], input[type="button"], input[type="reset"] {
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
 	display: inline-block;
 	padding: 8px 24px 7px;
 	text-decoration: none;
@@ -76,7 +83,10 @@ input[type="submit"], input[type="button"], input[type="reset"] {
 	background:#eee;
 	color:#666;
 }
-button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
 	padding: 7px 24px 8px;
 	background:#ccc;
 	color:#333;

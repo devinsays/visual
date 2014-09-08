@@ -19,6 +19,11 @@ a:active {
 	color: #fff;
 }
 input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
 textarea {
 	background: #191919;
 	color: #eee;
@@ -35,7 +40,10 @@ input[type="reset"] {
 	border: none;
 	border-bottom: 2px solid #000;
 }
-button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
 	background: #212121;
 	background: linear-gradient( #212121 0%, #323232 100%);
 	border: none;
