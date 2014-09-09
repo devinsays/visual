@@ -62,6 +62,7 @@ https://github.com/devinsays/visual/commits/master
 * Support HTML5 markup for comments, search, and gallery
 * Fix for styling of alternate input types [email]
 * Fix for wide gutters at 790px-820px in masonry
+* Better compatibility with long site titles
 
 1.1.0
 ===

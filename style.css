@@ -599,6 +599,7 @@ html, body {
 .site-title {
   font-size: 26px;
   font-size: 2.6rem;
+  word-break: break-all;
 }
 
 .site-title a {
@@ -1324,6 +1325,10 @@ article.comment {
   }
 }
 @media screen and (max-width: 490px) {
+  .site-title {
+    padding-right: 102px;
+  }
+
   .menu-toggle {
     top: 0;
     right: 0;
