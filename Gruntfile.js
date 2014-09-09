@@ -43,16 +43,15 @@ module.exports = function(grunt) {
 		concat: {
 		    release: {
 		        src: [
-		            'js/keyboard-image-navigation.js',
 		            'js/theme.js'
 		        ],
-		        dest: 'js/combined-min.js',
+		        dest: 'js/visual.min.js',
 		    }
 		},
 		uglify: {
 		    release: {
-		        src: 'js/combined-min.js',
-		        dest: 'js/combined-min.js'
+		        src: 'js/visual.min.js',
+		        dest: 'js/visual.min.js'
 		    }
 		},
     	// https://www.npmjs.org/package/grunt-wp-i18n
