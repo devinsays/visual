@@ -63,6 +63,7 @@ https://github.com/devinsays/visual/commits/master
 * Fix for styling of alternate input types [email]
 * Fix for wide gutters at 790px-820px in masonry
 * Better compatibility with long site titles
+* Improved RTL compatibility
 
 1.1.0
 ===
