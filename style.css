@@ -1748,7 +1748,8 @@ article.comment {
     border-color: #161616;
   }
 }
-/* Specific RTL */
+/* =RTL Specific Styles
+----------------------------------------------- */
 /* @noflip */
 body.rtl {
   direction: rtl;

@@ -59,7 +59,7 @@ function visual_customizer_register( $wp_customize ) {
 		'<a href="%1$s" title="%2$s" rel="generator">WordPress</a> <a href="%3$s">%4$s</a>',
 		esc_url( 'http://wordpress.org' ),
 		__( 'A Semantic Personal Publishing Platform', 'visual' ),
-		esc_url( 'http://wptheming.com' ),
+		esc_url( 'http://wptheming.com/visual-theme/' ),
 		__( 'Theme: Visual', 'visual' )
     );
 
