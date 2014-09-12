@@ -31,7 +31,7 @@ underscores.me
 [class*=" icon-"]:before {
   font-size: 18px;
   font-size: 1.8rem;
-  margin-right: 8px;
+  margin-left: 8px;
   font-family: 'entypo-custom';
   font-style: normal;
   font-weight: normal;
@@ -120,7 +120,7 @@ table {
 
 caption, th, td {
   font-weight: normal;
-  text-align: left;
+  text-align: right;
 }
 
 blockquote:before, blockquote:after,
@@ -166,7 +166,7 @@ p {
 }
 
 ul, ol {
-  margin: 0 0 15px 3em;
+  margin: 0 3em 15px 0;
 }
 
 ul {
@@ -179,7 +179,7 @@ ol {
 
 ul ul, ol ol, ul ol, ol ul {
   margin-bottom: 0;
-  margin-left: 15px;
+  margin-right: 15px;
 }
 
 dt {
@@ -382,14 +382,14 @@ textarea {
 /* Alignment */
 .alignleft {
   display: inline;
-  float: left;
-  margin-right: 15px;
+  float: right;
+  margin-left: 15px;
 }
 
 .alignright {
   display: inline;
-  float: right;
-  margin-left: 15px;
+  float: left;
+  margin-right: 15px;
 }
 
 .aligncenter {
@@ -564,17 +564,17 @@ html, body {
 }
 
 #primary {
-  float: left;
+  float: right;
   width: 100%;
-  padding-right: 320px;
+  padding-left: 320px;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
 }
 
 #secondary {
-  float: left;
+  float: right;
   width: 300px;
-  margin-left: -300px;
+  margin-right: -300px;
 }
 
 /* =Header
@@ -591,8 +591,8 @@ html, body {
 
 #masthead hgroup {
   margin-top: 12px;
-  float: left;
-  padding-left: 15px;
+  float: right;
+  padding-right: 15px;
   min-height: 48px;
 }
 
@@ -610,13 +610,13 @@ html, body {
 ----------------------------------------------- */
 .main-navigation {
   display: block;
-  float: right;
+  float: left;
 }
 
 .main-navigation ul {
   list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .main-navigation li {
@@ -624,7 +624,7 @@ html, body {
   font-size: 1.1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  float: left;
+  float: right;
   position: relative;
 }
 
@@ -643,7 +643,7 @@ html, body {
 }
 
 .main-navigation .menu-item-has-children a {
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .main-navigation .menu-item-has-children > a:after {
@@ -653,7 +653,7 @@ html, body {
   font-size: 1.6rem;
   line-height: 1;
   position: absolute;
-  right: 20px;
+  left: 20px;
   speak: none;
 }
 
@@ -669,10 +669,10 @@ html, body {
   display: none;
   background: #e9e9e9;
   position: absolute;
-  float: left;
+  float: right;
   margin: 0;
   top: 60px;
-  left: 0;
+  right: 0;
   width: 190px;
   z-index: 99999;
 }
@@ -705,10 +705,10 @@ html, body {
   display: block;
   position: relative;
   float: none;
-  border-left: none;
   border-right: none;
+  border-left: none;
   top: 0;
-  left: 0;
+  right: 0;
   width: 190px;
 }
 
@@ -733,15 +733,15 @@ html, body {
 }
 
 .masonry .hentry {
-  float: left;
+  float: right;
   width: 32%;
-  margin-right: 1%;
+  margin-left: 1%;
   -webkit-transition: height, width 0.2s;
           transition: height, width 0.2s;
 }
 
 .masonry .hentry:nth-child(3) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .masonry .hentry img {
@@ -751,7 +751,7 @@ html, body {
 }
 
 .post-link {
-  float: right;
+  float: left;
 }
 
 .masonry .twitter-tweet {
@@ -863,7 +863,7 @@ footer.entry-meta {
 
 .error404 .widget_recent_entries ul {
   list-style: none;
-  margin-left: 0;
+  margin-right: 0;
 }
 
 /* =Full-width page template
@@ -883,11 +883,11 @@ footer.entry-meta {
 
 #nav-below .nav-previous a, #nav-below .nav-next a {
   padding: 10px 15px;
-  float: left;
+  float: right;
 }
 
 #nav-below .nav-next a {
-  float: right;
+  float: left;
 }
 
 .page-links {
@@ -958,8 +958,8 @@ footer.entry-meta {
 .widget-grofile p,
 .widget-grofile ul,
 .widget_facebook_likebox iframe {
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .widget-grid-view-image {
@@ -1008,11 +1008,11 @@ table#wp-calendar {
 }
 
 #wp-calendar #prev {
-  text-align: left;
+  text-align: right;
 }
 
 #wp-calendar #next {
-  text-align: right;
+  text-align: left;
 }
 
 /* =Media
@@ -1083,7 +1083,7 @@ img.size-full {
 
 .gallery-item {
   display: inline-block;
-  text-align: left;
+  text-align: right;
   vertical-align: top;
   width: 100%;
   margin-bottom: 15px;
@@ -1190,7 +1190,7 @@ li.comment {
   list-style: none;
   margin: 0 0 15px;
   position: relative;
-  padding-left: 75px;
+  padding-right: 75px;
 }
 
 article.comment {
@@ -1215,7 +1215,7 @@ article.comment {
 .commentlist .avatar {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   padding: 0;
 }
 
@@ -1265,7 +1265,7 @@ article.comment {
 }
 
 #commentform label[for="author"], #commentform label[for="email"], #commentform label[for="url"] {
-  float: left;
+  float: right;
   padding: 5px 0;
   width: 100px;
 }
@@ -1285,7 +1285,7 @@ article.comment {
   }
 
   #masthead hgroup {
-    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .main-navigation {
@@ -1294,7 +1294,7 @@ article.comment {
   }
 
   .main-navigation li:first-child a {
-    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .main-navigation a {
@@ -1327,12 +1327,12 @@ article.comment {
 }
 @media screen and (max-width: 490px) {
   .site-title {
-    padding-right: 102px;
+    padding-left: 102px;
   }
 
   .menu-toggle {
     top: 0;
-    right: 0;
+    left: 0;
     box-shadow: 0;
     clip: auto;
     display: block;
@@ -1358,7 +1358,7 @@ article.comment {
   }
 
   .main-navigation li:first-child a {
-    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .main-navigation ul ul {
@@ -1371,7 +1371,7 @@ article.comment {
   }
 
   .main-navigation ul ul li a, .main-navigation ul ul li:first-child a {
-    padding: 18px 20px 18px 40px;
+    padding: 18px 40px 18px 20px;
   }
 
   .main-navigation ul ul li a:hover {
@@ -1474,21 +1474,21 @@ mark, ins {
 /* =Menu
 ----------------------------------------------- */
 .main-navigation {
-  border-right: 1px solid #161616;
+  border-left: 1px solid #161616;
 }
 
 .main-navigation li {
-  border-left: 1px solid #161616;
+  border-right: 1px solid #161616;
 }
 
 .main-navigation a {
   color: #ddd;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
-  border-left: 1px solid #363636;
+  border-right: 1px solid #363636;
 }
 
 .main-navigation li:last-of-type a {
-  border-right: 1px solid #363636;
+  border-left: 1px solid #363636;
 }
 
 .main-navigation li a:hover {
@@ -1505,10 +1505,10 @@ mark, ins {
 .main-navigation ul ul {
   background: #313131;
   top: 60px;
-  left: -1px;
+  right: -1px;
   border-top: 1px solid #222;
-  border-left: 1px solid #222;
   border-right: 1px solid #222;
+  border-left: 1px solid #222;
 }
 
 .main-navigation ul ul li {
@@ -1528,7 +1528,7 @@ mark, ins {
 /* =Masonry Layout
 ----------------------------------------------- */
 .masonry .hentry {
-  margin-right: 1.5%;
+  margin-left: 1.5%;
 }
 
 .masonry .entry-title a {
@@ -1698,12 +1698,12 @@ article.comment {
   }
 
   .main-navigation .menu li:last-child {
-    border-right: 1px solid #161616;
+    border-left: 1px solid #161616;
   }
 }
 @media screen and (max-width: 490px) {
   .menu-toggle {
-    border-left: 1px solid #161616;
+    border-right: 1px solid #161616;
   }
 
   .menu-toggle a:hover {

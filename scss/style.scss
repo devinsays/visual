@@ -308,6 +308,7 @@ html, body {
 .entry-title {
 	font-size:20px;
 	font-size:2.0rem;
+	word-break: break-all;
 }
 .entry-header {
 	padding:10px 15px 10px;
@@ -842,7 +843,8 @@ article.comment {
 	.main-navigation ul ul li a:hover {
 		background:#e9e9e9;
 	}
-	.masonry .hentry {
+	.masonry .hentry,
+	body.rtl .masonry .hentry {
 		width:100%;
 		margin:0 0 20px;
 	}
@@ -852,3 +854,15 @@ article.comment {
 ----------------------------------------------- */
 
 @import "dark";
+
+/* Specific RTL */
+
+/* @noflip */
+body.rtl {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+/* @noflip */
+body.rtl .masonry .hentry:nth-child(3) {
+	margin-left: 1.5%;
+}

@@ -64,6 +64,19 @@ module.exports = function(grunt) {
 	            }
 	        }
 	    },
+		cssjanus: {
+			theme: {
+				options: {
+					swapLtrRtlInUrl: false
+				},
+				files: [
+					{
+						src: 'style.css',
+						dest: 'style-rtl.css'
+					}
+				]
+			}
+		},
 	    replace: {
 			styleVersion: {
 				src: [
@@ -102,7 +115,8 @@ module.exports = function(grunt) {
 		'csscomb',
 		'concat:release',
 		'uglify:release',
-		'makepot'
+		'makepot',
+		'cssjanus'
 	]);
 
 };

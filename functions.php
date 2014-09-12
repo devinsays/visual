@@ -116,6 +116,9 @@ function visual_scripts() {
 
 	wp_enqueue_style( 'visual-style', get_stylesheet_uri(), array(), VISUAL_VERSION );
 
+	// Use style-rtl.css for RTL layouts
+	wp_style_add_data( 'visual-style', 'rtl', 'replace' );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
