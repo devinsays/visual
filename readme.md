@@ -17,6 +17,16 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Credits
 
+Translations
+===
+
+* Finnish (fi) - Sami Keijonen
+* French (fr_FR) - FxB
+* Portuguese (pt_BR) - Dionizio Bonfim Bach
+
+Resources
+===
+
 This theme makes use of several libraries and scripts built by others.  A big thanks to everyone who has worked on these projects:
 
 Visual was built off the foundation of Underscores (_s):
@@ -54,6 +64,13 @@ Icon glyphs packaged with Fontello
 
 Complete list of commits can be found at:
 https://github.com/devinsays/visual/commits/master
+
+Development
+===
+
+* Translation: Finnish (fi) - Sami Keijonen
+* Translation: French (fr_FR) - FxB
+* Translation: Portuguese (pt_BR) - Dionizio Bonfim Bach
 
 1.2.0
 ===
