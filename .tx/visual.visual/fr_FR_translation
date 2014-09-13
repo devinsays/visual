@@ -1,0 +1,332 @@
+# Copyright (C) 2014 Devin Price
+# This file is distributed under the GNU General Public License.
+# Translators:
+# FxB <fxb@wp-translations.org>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Visual\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2014-09-12 17:24:12+00:00\n"
+"PO-Revision-Date: 2014-09-13 16:45+0000\n"
+"Last-Translator: FxB <fxb@wp-translations.org>\n"
+"Language-Team: French (France) (http://www.transifex.com/projects/p/visual/language/fr_FR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: grunt-wp-i18n 0.4.8\n"
+
+#: 404.php:16
+msgid "Oops! That page can&apos;t be found."
+msgstr "Aïe ! Cette page ne peut pas être trouvée."
+
+#: 404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links"
+" below or a search?"
+msgstr "Il semble que rien ne puisse être trouvé pour cette page. Peut-être en suivant un des liens ci-dessous, ou en faisant une recherche&nbsp;?"
+
+#: archive.php:19
+msgid "Category Archives: %s"
+msgstr "Archives pour la catégorie&nbsp;: %s"
+
+#: archive.php:22
+msgid "Tag Archives: %s"
+msgstr "Archives du mot-clef&nbsp;: %s"
+
+#: archive.php:29
+msgid "Author Archives: %s"
+msgstr "Archives de l&rsquo;auteur&nbsp;: %s"
+
+#: archive.php:37
+msgid "Daily Archives: %s"
+msgstr "Archives quotidiennes&nbsp;:"
+
+#: archive.php:40
+msgid "Monthly Archives: %s"
+msgstr "Archives mensuelles&nbsp;: %s"
+
+#: archive.php:43
+msgid "Yearly Archives: %s"
+msgstr "Archives annuelles&nbsp;: %s"
+
+#: archive.php:46 sidebar.php:18
+msgid "Archives"
+msgstr "Archives"
+
+#: comments.php:39 comments.php:59
+msgid "Comment navigation"
+msgstr "Navigation des commentaires"
+
+#: comments.php:40 comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Commentaires plus anciens"
+
+#: comments.php:41 comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr "Commentaires plus récents &rarr;"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: content-page.php:17 content-single.php:64 image.php:35 image.php:108
+msgid "Edit"
+msgstr "Modifier"
+
+#: content-single.php:26 image.php:94
+msgid "Pages:"
+msgstr "Pages : "
+
+#. translators: used between list items, there is a space after the comma
+#: content-single.php:32 content-single.php:35
+msgid ", "
+msgstr ",&larr"
+
+#: content-single.php:42
+msgid "This entry was tagged %2$s."
+msgstr "Cette entrée a été tagué %2$s."
+
+#: content-single.php:48
+msgid "This entry was posted in %1$s and tagged %2$s."
+msgstr "Cette entrée a été publiée dans %1$s et taguée %2$s."
+
+#: content-single.php:50
+msgid "This entry was posted in %1$s."
+msgstr "Cette entrée à été publiée dans %1$s."
+
+#: content.php:17
+msgid "Permalink to %s"
+msgstr "Permalien vers %s"
+
+#: content.php:40
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
+
+#: content.php:48
+msgid "Comment"
+msgstr "Commenter"
+
+#: content.php:48
+msgid "1 Comment"
+msgstr "1 commentaire"
+
+#: content.php:48
+msgid " % Comments"
+msgstr "% commentaires"
+
+#: functions.php:71
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: functions.php:98
+msgid "Sidebar"
+msgstr "Colonne latérale"
+
+#: header.php:35
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:36
+msgid "Skip to content"
+msgstr "Aller au contenu principal"
+
+#: image.php:24
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to "
+"full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return "
+"to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "Publié le <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> à <a href=\"%3$s\" title=\"Lien vers l'image pleine taille\">%4$s &times; %5$s</a> dans <a href=\"%6$s\" title=\"Revenir à %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: image.php:39
+msgid "&larr; Previous"
+msgstr "&larr; Précédent"
+
+#: image.php:40
+msgid "Next &rarr;"
+msgstr "Suivant &rarr;"
+
+#: image.php:100
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Laisser un commentaire\">Laisser un commentaire</a> ou un rétrolien : <a class=\"trackback-link\" href=\"%s\" title=\"les retroliens pour cet article\" rel=\"trackback\">les retroliens</a>"
+
+#: image.php:102
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-"
+"link\" href=\"%s\" title=\"Trackback URL for your post\" "
+"rel=\"trackback\">Trackback URL</a>."
+msgstr "Les commentaires sont clos mais vous pouvez faire un rétrolien : <a class=\"trackback-link\" href=\"%s\" title=\"le retrolien pour votre article\" rel=\"trackback\">le rétrolien</a>."
+
+#: image.php:104
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" "
+"href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Les rétroliens sont fermés, mais vous pouvez <a class=\"comment-link\" href=\"#respond\" title=\"Laisser un commentaire\">commenter</a>."
+
+#: image.php:106
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Les commentaires et les rétroliens sont fermés pour l'instant."
+
+#: inc/customizer.php:35
+msgid "Excerpts"
+msgstr "Extraits"
+
+#: inc/customizer.php:45
+msgid "Display excerpts on archives"
+msgstr "Afficher les extraits sur les archives"
+
+#: inc/customizer.php:54 inc/customizer.php:74
+msgid "Footer Text"
+msgstr "Texte du pied de page"
+
+#: inc/customizer.php:61 inc/options-functions.php:41
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Une plate-forme de publication personnelle à la pointe de la sémantique"
+
+#: inc/customizer.php:63 inc/options-functions.php:43
+msgid "Theme: Visual"
+msgstr "Thème&nbsp;: Visual"
+
+#: inc/extras.php:73
+msgid "Page %s"
+msgstr "Page %s"
+
+#: inc/template-tags.php:37
+msgid "Post navigation"
+msgstr "Navigation des articles"
+
+#: inc/template-tags.php:41
+msgid "Previous"
+msgstr "Précédent"
+
+#: inc/template-tags.php:42
+msgid "Next"
+msgstr "Suivant"
+
+#: inc/template-tags.php:47
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Articles plus anciens"
+
+#: inc/template-tags.php:51
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Articles plus récents <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:76
+msgid "Pingback:"
+msgstr "Ping&nbsp;:"
+
+#: inc/template-tags.php:76 inc/template-tags.php:99
+msgid "(Edit)"
+msgstr "(Modifier)"
+
+#: inc/template-tags.php:86
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">dit&nbsp;:</span>"
+
+#: inc/template-tags.php:89
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#. translators: 1: date, 2: time
+#: inc/template-tags.php:97
+msgid "%1$s at %2$s"
+msgstr "%1$s à %2$s"
+
+#: inc/template-tags.php:124
+msgid ""
+"Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class"
+"=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"byline\"> by "
+"<span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" "
+"title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr "Publié le <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"byline\"> par <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#: inc/template-tags.php:130
+msgid "View all posts by %s"
+msgstr "Afficher tous les articles par %s"
+
+#: no-results.php:14
+msgid "Nothing Found"
+msgstr "Rien n&rsquo;a été trouvé"
+
+#: no-results.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Prêt à publier votre premier article&nbsp;? <a href=\"%1$s\">Commencez ici</a>"
+
+#: no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Désolé, mais rien ne correspond à vos critères de recherche. Veuillez réessayer avec d&rsquo;autres mots-clés."
+
+#: no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Il semblerait que nous ne soyons pas en mesure de trouver votre contenu. Essayez en lançant une recherche."
+
+#: search.php:14
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour : %s"
+
+#: searchform.php:10 searchform.php:12
+msgid "Search"
+msgstr "Chercher"
+
+#: searchform.php:11
+msgid "Search &hellip;"
+msgstr "Rechercher &hellip;"
+
+#: sidebar.php:25
+msgid "Meta"
+msgstr "Méta"
+
+#. Theme Name of the plugin/theme
+msgid "Visual"
+msgstr "Visuel"
+
+#. Theme URI of the plugin/theme
+msgid "http://wptheming.com/2013/03/visual-theme/"
+msgstr "http://wptheming.com/2013/03/visual-theme/"
+
+#. Description of the plugin/theme
+msgid ""
+"Visual is a well-crafted responsive theme designed to showcase images, "
+"artwork and photgraphy in a smart grid layout.  An icon font ensures crisp "
+"display on retina devices and quick load times.  It's simple for new users "
+"to set up.  Developers can easily extend the code in a child theme.  For "
+"more information and a theme demo, visit: http://wptheming.com/?p=5277."
+msgstr "Visual est un thème responsive conçu pour mettre en avant vos images, oeuvres ou travaux photographiques dans une mise en page en grille intelligente. Une police d'icônes assure un affichage parfait  sur les appareils retina, le tout dans un temps record. Simple d'utilisation pour les nouveaux utilisateurs. Les développeurs peuvent eux facilement modifier son code dans un thème enfant. Pour plus d'informations et une démo de thème, direction : http://wptheming.com/?p=5277."
+
+#. Author of the plugin/theme
+msgid "Devin Price"
+msgstr "Devin Price"
+
+#. Author URI of the plugin/theme
+msgid "http://wptheming.com"
+msgstr "http://wptheming.com"
+
+#. Template Name of the plugin/theme
+msgid "Full Width, No Sidebar"
+msgstr "Pleine largeur, sans colonne latérale"
+
+#: comments.php:32
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Une réflexion au sujet de &laquo;&nbsp;%2$s&nbsp;&raquo;"
+msgstr[1] "%1$s réflexions au sujet de &laquo;&nbsp;%2$s&nbsp;&raquo;"
+
+#: inc/template-tags.php:41
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: inc/template-tags.php:42
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
