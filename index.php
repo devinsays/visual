@@ -18,6 +18,7 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>
+			<div id="posts-wrap" data-columns="3">
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -32,6 +33,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
+			</div>
 			<?php else : ?>
 
 				<?php get_template_part( 'no-results', 'index' ); ?>
@@ -39,9 +41,9 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content .site-content -->
-			
+
 		<?php visual_content_nav( 'nav-below' ); ?>
-			
+
 		</div><!-- #primary .content-area -->
 
 <?php get_footer(); ?>

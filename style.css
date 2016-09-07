@@ -324,8 +324,7 @@ input[type="submit"]:active {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* Addresses box sizing set to content-box in IE8/9 */
   padding: 0;
   /* Addresses excess padding in IE8/9 */
@@ -334,7 +333,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
-  -moz-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
   box-sizing: content-box;
 }
@@ -487,8 +485,7 @@ body {
 a {
   color: #449ccc;
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-out;
-          transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 a:hover,
@@ -567,8 +564,7 @@ html, body {
   float: left;
   width: 100%;
   padding-right: 320px;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #secondary {
@@ -732,18 +728,19 @@ html, body {
   padding: 0;
 }
 
-.masonry .hentry {
-  float: left;
-  width: 32%;
-  margin-right: 1%;
-  -webkit-transition: height, width 0.2s;
-          transition: height, width 0.2s;
-}
+@media screen and (min-width: 790px) {
+  /* @noflip */
+  .masonry .hentry {
+    width: calc(33.3% - 20px);
+    margin-right: 30px;
+    transition: height, width 0.2s;
+  }
 
-.masonry .hentry:nth-child(3) {
-  margin-right: 0;
+  /* @noflip */
+  .masonry .hentry:nth-child(3) {
+    margin-right: 0;
+  }
 }
-
 .masonry .hentry img {
   display: block;
   width: 100%;
@@ -1264,7 +1261,9 @@ article.comment {
   display: block;
 }
 
-#commentform label[for="author"], #commentform label[for="email"], #commentform label[for="url"] {
+#commentform label[for="author"],
+#commentform label[for="email"],
+#commentform label[for="url"] {
   float: left;
   padding: 5px 0;
   width: 100px;
@@ -1425,7 +1424,6 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"] {
   background: #313131;
-  background: -webkit-linear-gradient(#323232 0%, #212121 100%);
   background: linear-gradient(#323232 0%, #212121 100%);
   color: #fff;
   border: none;
@@ -1437,7 +1435,6 @@ input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
   background: #212121;
-  background: -webkit-linear-gradient(#212121 0%, #323232 100%);
   background: linear-gradient(#212121 0%, #323232 100%);
   border: none;
   border-top: 2px solid #000;
@@ -1504,7 +1501,6 @@ mark, ins {
 
 .main-navigation ul ul {
   background: #313131;
-  top: 60px;
   left: -1px;
   border-top: 1px solid #222;
   border-left: 1px solid #222;

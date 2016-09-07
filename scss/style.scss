@@ -222,8 +222,8 @@ html, body {
 	z-index: 99999;
 }
 .main-navigation ul ul li {
-	border:none;
-	float:none;
+	border: none;
+	float: none;
 	border-top:1px solid #f5f5f5;
 }
 .main-navigation ul ul li a {
@@ -271,14 +271,18 @@ html, body {
 	float:none;
 	padding:0;
 }
-.masonry .hentry {
-	float:left;
-	width:32%;
-	margin-right:1%;
-	transition: height, width 0.2s;
-}
-.masonry .hentry:nth-child(3) {
-	margin-right:0;
+
+@media screen and (min-width:790px) {
+	/* @noflip */
+	.masonry .hentry {
+		width: calc(33.3% - 20px);
+		margin-right: 30px;
+		transition: height, width 0.2s;
+	}
+	/* @noflip */
+	.masonry .hentry:nth-child(3) {
+		margin-right:0;
+	}
 }
 .masonry .hentry img {
 	display:block;
@@ -745,7 +749,9 @@ article.comment {
 #respond .form-allowed-tags code {
 	display: block;
 }
-#commentform label[for="author"], #commentform label[for="email"], #commentform label[for="url"] {
+#commentform label[for="author"],
+#commentform label[for="email"],
+#commentform label[for="url"] {
 	float: left;
 	padding: 5px 0;
 	width: 100px;

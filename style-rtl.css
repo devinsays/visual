@@ -3,7 +3,7 @@ Theme Name: Visual
 Theme URI: http://wptheming.com/2013/03/visual-theme/
 Author: Devin Price
 Author URI: http://wptheming.com
-Description: Visual is a well-crafted responsive theme designed to showcase images, artwork and photgraphy in a smart grid layout.  An icon font ensures crisp display on retina devices and quick load times.  It's simple for new users to set up.  Developers can easily extend the code in a child theme.  For more information and a theme demo, visit: http://wptheming.com/?p=5277.
+Description: Visual is a well-crafted responsive theme designed to showcase images, artwork and photography in a smart grid layout.  An icon font ensures crisp display on retina devices and quick load times.  It's simple for new users to set up.  Developers can easily extend the code in a child theme.  For more information and a theme demo, visit: http://wptheming.com/visual-theme.
 Version: 1.2.0
 License: GNU General Public License
 License URI: license.txt
@@ -324,8 +324,7 @@ input[type="submit"]:active {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* Addresses box sizing set to content-box in IE8/9 */
   padding: 0;
   /* Addresses excess padding in IE8/9 */
@@ -334,7 +333,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
-  -moz-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
   box-sizing: content-box;
 }
@@ -487,8 +485,7 @@ body {
 a {
   color: #449ccc;
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-out;
-          transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 a:hover,
@@ -567,8 +564,7 @@ html, body {
   float: right;
   width: 100%;
   padding-left: 320px;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #secondary {
@@ -732,18 +728,19 @@ html, body {
   padding: 0;
 }
 
-.masonry .hentry {
-  float: right;
-  width: 32%;
-  margin-left: 1%;
-  -webkit-transition: height, width 0.2s;
-          transition: height, width 0.2s;
-}
+@media screen and (min-width: 790px) {
+  /* @noflip */
+  .masonry .hentry {
+    width: calc(33.3% - 20px);
+    margin-right: 30px;
+    transition: height, width 0.2s;
+  }
 
-.masonry .hentry:nth-child(3) {
-  margin-left: 0;
+  /* @noflip */
+  .masonry .hentry:nth-child(3) {
+    margin-right: 0;
+  }
 }
-
 .masonry .hentry img {
   display: block;
   width: 100%;
@@ -1425,8 +1422,7 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"] {
   background: #313131;
-  background: -webkit-linear-gradient(#323232 0%, #212121 100%);
-  background: linear-gradient(#323232 0%, #212121 100%);
+  background: linear-gradient(#323232 100%, #212121 100%);
   color: #fff;
   border: none;
   border-bottom: 2px solid #000;
@@ -1437,8 +1433,7 @@ input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
   background: #212121;
-  background: -webkit-linear-gradient(#212121 0%, #323232 100%);
-  background: linear-gradient(#212121 0%, #323232 100%);
+  background: linear-gradient(#212121 100%, #323232 100%);
   border: none;
   border-top: 2px solid #000;
 }
@@ -1463,7 +1458,7 @@ mark, ins {
 
 .site-title a {
   color: #eee;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
 }
 
 .site-title a:hover {
@@ -1537,7 +1532,7 @@ mark, ins {
 
 .masonry footer.entry-meta a {
   text-decoration: none;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.9);
 }
 
 .masonry footer.entry-meta a:hover {
@@ -1683,7 +1678,7 @@ article.comment {
 #colophon {
   background: #313131;
   border-top: 1px solid #212121;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
 }
 
 #colophon a {

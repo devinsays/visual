@@ -71,6 +71,7 @@ Development
 * Translation: Finnish (fi) - Sami Keijonen
 * Translation: French (fr_FR) - FxB
 * Translation: Portuguese (pt_BR) - Dionizio Bonfim Bach
+* Update: Refactor javascript, use WordPress version of Masonry
 
 1.2.0
 ===

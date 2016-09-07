@@ -32,26 +32,18 @@ module.exports = function(grunt) {
 				dest: 'style.css'
 			}
 		},
-		csscomb: {
-			options: {
-                config: '.csscomb.json'
-            },
-            files: {
-                'style.css': ['style.css'],
-            }
-		},
 		concat: {
 		    release: {
 		        src: [
 		            'js/theme.js'
 		        ],
-		        dest: 'js/visual.min.js',
+		        dest: 'js/theme.min.js',
 		    }
 		},
 		uglify: {
 		    release: {
-		        src: 'js/visual.min.js',
-		        dest: 'js/visual.min.js'
+		        src: 'js/theme.min.js',
+		        dest: 'js/theme.min.js'
 		    }
 		},
     	// https://www.npmjs.org/package/grunt-wp-i18n
@@ -111,7 +103,6 @@ module.exports = function(grunt) {
     	'replace',
     	'sass',
 		'autoprefixer',
-		'csscomb',
 		'concat:release',
 		'uglify:release',
 		'makepot',
