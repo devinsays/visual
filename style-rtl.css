@@ -573,6 +573,18 @@ html, body {
   margin-right: -300px;
 }
 
+@media screen and (max-width: 790px) {
+  #primary {
+    float: none;
+    padding: 0;
+  }
+
+  #secondary {
+    float: none;
+    width: auto;
+    margin: 0 0 40px;
+  }
+}
 /* =Header
 ----------------------------------------------- */
 #masthead {
@@ -602,6 +614,20 @@ html, body {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 790px) {
+  #masthead .section {
+    padding: 0;
+  }
+
+  #masthead hgroup {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .site-title {
+    padding-left: 102px;
+  }
+}
 /* =Menu
 ----------------------------------------------- */
 .main-navigation {
@@ -721,11 +747,83 @@ html, body {
   display: none;
 }
 
+@media screen and (max-width: 790px) {
+  .main-navigation {
+    clear: both;
+    float: none;
+  }
+
+  .main-navigation li:first-child a {
+    padding-right: 20px;
+  }
+
+  .main-navigation a {
+    padding: 18px 14px;
+  }
+
+  .main-navigation ul ul {
+    top: 52px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .menu-toggle {
+    top: 0;
+    left: 0;
+    box-shadow: 0;
+    clip: auto;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-toggle a {
+    padding: 16px 20px 17px;
+  }
+
+  .menu-toggle a:hover {
+    background: #e9e9e9;
+  }
+
+  .main-navigation .menu {
+    display: none;
+  }
+
+  .main-navigation li {
+    border-top: 1px solid #f9f9f9;
+    float: none;
+  }
+
+  .main-navigation li:first-child a {
+    padding-right: 14px;
+  }
+
+  .main-navigation ul ul {
+    background: none;
+    float: none;
+    position: relative;
+    width: auto;
+    top: 0;
+    display: block;
+  }
+
+  .main-navigation ul ul li a, .main-navigation ul ul li:first-child a {
+    padding: 18px 40px 18px 20px;
+  }
+
+  .main-navigation ul ul li a:hover {
+    background: #e9e9e9;
+  }
+}
 /* =Masonry Layout
 ----------------------------------------------- */
 .masonry #primary {
   float: none;
   padding: 0;
+}
+
+.masonry .hentry {
+  width: 100%;
+  margin: 0 0 20px;
 }
 
 @media screen and (min-width: 790px) {
@@ -738,6 +836,16 @@ html, body {
 
   /* @noflip */
   .masonry .hentry:nth-child(3) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 510px) and (max-width: 789px) {
+  .masonry .hentry {
+    width: calc( 50% - 10px);
+  }
+
+  /* @noflip */
+  .masonry .hentry:nth-child(2) {
     margin-right: 0;
   }
 }
@@ -863,6 +971,12 @@ footer.entry-meta {
   margin-right: 0;
 }
 
+@media screen and (max-width: 790px) {
+  .search-no-results .hentry {
+    float: none;
+    width: auto;
+  }
+}
 /* =Full-width page template
 ----------------------------------------------- */
 .page-template-page-fullwidth-php #primary {
@@ -1261,7 +1375,9 @@ article.comment {
   display: block;
 }
 
-#commentform label[for="author"], #commentform label[for="email"], #commentform label[for="url"] {
+#commentform label[for="author"],
+#commentform label[for="email"],
+#commentform label[for="url"] {
   float: right;
   padding: 5px 0;
   width: 100px;
@@ -1274,113 +1390,6 @@ article.comment {
   padding: 15px 0;
 }
 
-/* =Responsive
------------------------------------------------ */
-@media screen and (max-width: 790px) {
-  #masthead .section {
-    padding: 0;
-  }
-
-  #masthead hgroup {
-    padding-right: 20px;
-  }
-
-  .main-navigation {
-    clear: both;
-    float: none;
-  }
-
-  .main-navigation li:first-child a {
-    padding-right: 20px;
-  }
-
-  .main-navigation a {
-    padding: 18px 14px;
-  }
-
-  .main-navigation ul ul {
-    top: 52px;
-  }
-
-  .masonry .hentry {
-    width: 48%;
-  }
-
-  .search-no-results .hentry {
-    float: none;
-    width: auto;
-  }
-
-  #primary {
-    float: none;
-    padding: 0;
-  }
-
-  #secondary {
-    float: none;
-    width: auto;
-    margin: 0 0 40px;
-  }
-}
-@media screen and (max-width: 490px) {
-  .site-title {
-    padding-left: 102px;
-  }
-
-  .menu-toggle {
-    top: 0;
-    left: 0;
-    box-shadow: 0;
-    clip: auto;
-    display: block;
-    padding: 0;
-    margin: 0;
-  }
-
-  .menu-toggle a {
-    padding: 16px 20px 17px;
-  }
-
-  .menu-toggle a:hover {
-    background: #e9e9e9;
-  }
-
-  .main-navigation .menu {
-    display: none;
-  }
-
-  .main-navigation li {
-    border-top: 1px solid #f9f9f9;
-    float: none;
-  }
-
-  .main-navigation li:first-child a {
-    padding-right: 14px;
-  }
-
-  .main-navigation ul ul {
-    background: none;
-    float: none;
-    position: relative;
-    width: auto;
-    top: 0;
-    display: block;
-  }
-
-  .main-navigation ul ul li a, .main-navigation ul ul li:first-child a {
-    padding: 18px 40px 18px 20px;
-  }
-
-  .main-navigation ul ul li a:hover {
-    background: #e9e9e9;
-  }
-
-  .masonry .hentry,
-  body.rtl .masonry .hentry {
-    width: 100%;
-    margin: 0 0 20px;
-  }
-}
 /* =Dark Color Scheme
 ----------------------------------------------- */
 /* =Dark Styles
@@ -1499,7 +1508,6 @@ mark, ins {
 
 .main-navigation ul ul {
   background: #313131;
-  top: 60px;
   right: -1px;
   border-top: 1px solid #222;
   border-right: 1px solid #222;
@@ -1749,9 +1757,4 @@ article.comment {
 body.rtl {
   direction: rtl;
   unicode-bidi: embed;
-}
-
-/* @noflip */
-body.rtl .masonry .hentry:nth-child(3) {
-  margin-left: 1.5%;
 }

@@ -333,8 +333,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
   box-sizing: content-box;
 }
@@ -1760,5 +1758,3 @@ body.rtl {
   direction: rtl;
   unicode-bidi: embed;
 }
-
-/*# sourceMappingURL=style.css.map */

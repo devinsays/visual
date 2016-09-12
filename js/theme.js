@@ -62,6 +62,21 @@
 				}, 200 )
 			);
 
+			// Infinite Scroll
+			$( document.body ).on( 'post-load', function ( postload ) {
+
+				var $newItems = $('.infinite-wrap').not('.is--replaced');
+				var $elements = $newItems.find('.hentry');
+				$elements.hide();
+				self.cache.$main.append($elements);
+				$elements.imagesLoaded( function() {
+					console.log( 'reloaded' );
+					self.cache.$main.masonry( "appended", $elements, true ).masonry( "reloadItems" ).masonry( "layout" );
+					$elements.fadeIn();
+				});
+
+			});
+
 		},
 
 		/**
@@ -120,23 +135,6 @@
 					gutter : gutter
 				});
 				self.cache.masonryLoaded = true;
-			});
-
-			// For Infinite Scroll
-			var infinite_count = 0;
-
-			$( document.body ).on( 'post-load', function () {
-
-				infinite_count = infinite_count + 1;
-				var $newItems = $( '#infinite-view-' + infinite_count  ).not('.is--replaced');
-				var $elements = $newItems.find('.hentry');
-				$elements.hide();
-				self.cache.$main.append($elements);
-				$elements.imagesLoaded( function() {
-					self.cache.$main.masonry( "appended", $elements, true ).masonry( "reloadItems" ).masonry( "layout" );
-					$elements.fadeIn();
-				});
-
 			});
 
 		},

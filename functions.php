@@ -28,9 +28,6 @@ if ( ! isset( $content_width ) )
 function visual_content_width() {
 	global $content_width;
 
-	if ( is_home() || is_search() || is_archive() )
-		$content_width = 326;
-
 	if ( is_page_template( 'page-fullwidth.php' ) )
 		$content_width = 990;
 }
@@ -139,7 +136,6 @@ function visual_scripts() {
 		VISUAL_VERSION,
 		true
 	);
-
 
 }
 add_action( 'wp_enqueue_scripts', 'visual_scripts' );
