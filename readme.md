@@ -35,12 +35,6 @@ Visual was built off the foundation of Underscores (_s):
 * Underscores: http://underscores.me
 * GPL License: https://github.com/Automattic/_s/blob/master/license.txt
 
-Masonry.js, which responsible for the grid layout on archive pages
-===
-
-* http://masonry.desandro.com
-* MIT License: https://github.com/desandro/masonry/blob/master/jquery.masonry.js
-
 Fonts
 ===
 
@@ -65,7 +59,7 @@ Icon glyphs packaged with Fontello
 Complete list of commits can be found at:
 https://github.com/devinsays/visual/commits/master
 
-Development
+1.3.0 (09-11-2016)
 ===
 
 * Translation: Finnish (fi) - Sami Keijonen

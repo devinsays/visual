@@ -9,7 +9,7 @@
 /**
  * Set constant for version
  */
-define( 'VISUAL_VERSION', '1.2.0' );
+define( 'VISUAL_VERSION', '1.3.0' );
 
 /**
  * Set the content width based on the theme's design and stylesheet.
