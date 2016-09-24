@@ -12,23 +12,7 @@
  *
  * @since Visual 0.6
  */
-
 function visual_customizer_register( $wp_customize ) {
-
-	class Visual_Textarea_Control extends WP_Customize_Control {
-	    public $type = 'textarea';
-
-	    public function render_content() {
-	        ?>
-	        <label>
-	        <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-	        <textarea rows="5" style="width:100%;" <?php $this->link(); ?>>
-	        	<?php echo esc_textarea( $this->value() ); ?>
-	        </textarea>
-	        </label>
-	        <?php
-	    }
-	}
 
 	// Excerpts
 	$wp_customize->add_section( 'visual_excerpts', array(
@@ -38,7 +22,8 @@ function visual_customizer_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'visual-theme[display_excerpts]', array(
     	'default' => false,
-    	'type' => 'option'
+    	'type' => 'option',
+    	'sanitize_callback' => 'visual_sanitize_checkbox'
 	) );
 
     $wp_customize->add_control( 'display_excerpts', array(
@@ -65,22 +50,52 @@ function visual_customizer_register( $wp_customize ) {
 
     $wp_customize->add_setting( 'visual-theme[footer_text]', array(
     	'default' => $footer_text,
-    	'type' => 'option'
+    	'type' => 'option',
+    	'sanitize_callback' => 'visual_sanitize_text'
 	) );
 
-    $wp_customize->add_control( new Visual_Textarea_Control (
-    	$wp_customize, 'visual_footer',
-    		array(
-		    	'label'   => __( 'Footer Text', 'visual' ),
-		    	'section' => 'visual_footer',
-		    	'settings' => 'visual-theme[footer_text]'
-			)
-		)
-	);
+	$wp_customize->add_control( 'visual_footer', array(
+		'label' => __( 'Footer Text', 'visual' ),
+		'type' => 'textarea',
+		'section' => 'visual_footer',
+		'settings' => 'visual-theme[footer_text]'
+	) );
 
 }
-
 add_action( 'customize_register', 'visual_customizer_register' );
+
+if ( ! function_exists( 'visual_sanitize_text' ) ) :
+/**
+ * Sanitize a string to allow only tags in the allowedtags array.
+ *
+ * @since  1.0.0.
+ *
+ * @param  string    $string    The unsanitized string.
+ * @return string               The sanitized string.
+ */
+function visual_sanitize_text( $string ) {
+	global $allowedtags;
+	return wp_kses( $string , $allowedtags );
+}
+endif;
+
+if ( ! function_exists( 'visual_sanitize_checkbox' ) ) :
+/**
+ * Sanitize a checkbox to only allow 0 or 1
+ *
+ * @since  1.0.0.
+ *
+ * @param  boolean    $value    The unsanitized value.
+ * @return boolean				The sanitized boolean.
+ */
+function visual_sanitize_checkbox( $value ) {
+	if ( 1 == $value ) {
+		return 1;
+    } else {
+		return 0;
+    }
+}
+endif;
 
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
@@ -101,6 +116,12 @@ add_action( 'customize_register', 'visual_customize_register' );
  * @since Visual 0.1
  */
 function visual_customize_preview_js() {
-	wp_enqueue_script( 'visual_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20120827', true );
+	wp_enqueue_script(
+		'visual_customizer',
+		get_template_directory_uri() . '/js/customizer.js',
+		array( 'customize-preview' ),
+		'20120827',
+		true
+	);
 }
 add_action( 'customize_preview_init', 'visual_customize_preview_js' );

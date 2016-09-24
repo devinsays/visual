@@ -66,6 +66,8 @@ https://github.com/devinsays/visual/commits/master
 * Translation: French (fr_FR) - FxB
 * Translation: Portuguese (pt_BR) - Dionizio Bonfim Bach
 * Update: Refactor javascript, use WordPress version of Masonry
+* Update: Support WordPress 'title-tag'
+* Update: Sanitization callbacks on Customizer settings
 
 1.2.0
 ===
