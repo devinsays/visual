@@ -59,6 +59,13 @@ Icon glyphs packaged with Fontello
 Complete list of commits can be found at:
 https://github.com/devinsays/visual/commits/master
 
+1.3.1 (09-25-2016)
+===
+
+* Update: Support WordPress 'title-tag'
+* Update: Sanitization callbacks on Customizer settings
+
+
 1.3.0 (09-11-2016)
 ===
 
