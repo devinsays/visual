@@ -46,16 +46,6 @@ module.exports = function(grunt) {
 		        dest: 'js/theme.min.js'
 		    }
 		},
-    	// https://www.npmjs.org/package/grunt-wp-i18n
-	    makepot: {
-	        target: {
-	            options: {
-	                domainPath: '/languages/',    // Where to save the POT file.
-	                potFilename: 'visual.pot',   // Name of the POT file.
-	                type: 'wp-theme'  // Type of project (wp-plugin or wp-theme).
-	            }
-	        }
-	    },
 		cssjanus: {
 			theme: {
 				options: {
@@ -105,7 +95,6 @@ module.exports = function(grunt) {
 		'autoprefixer',
 		'concat:release',
 		'uglify:release',
-		'makepot',
 		'cssjanus'
 	]);
 

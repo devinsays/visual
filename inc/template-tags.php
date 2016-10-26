@@ -34,7 +34,7 @@ function visual_content_nav( $nav_id ) {
 
 	?>
 	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?> clearfix">
-		<h1 class="assistive-text"><?php _e( 'Post navigation', 'visual' ); ?></h1>
+		<h1 class="visuallyhidden"><?php _e( 'Post navigation', 'visual' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 

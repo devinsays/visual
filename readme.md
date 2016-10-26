@@ -17,13 +17,6 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Credits
 
-Translations
-===
-
-* Finnish (fi) - Sami Keijonen
-* French (fr_FR) - FxB
-* Portuguese (pt_BR) - Dionizio Bonfim Bach
-
 Resources
 ===
 
@@ -58,6 +51,13 @@ Icon glyphs packaged with Fontello
 
 Complete list of commits can be found at:
 https://github.com/devinsays/visual/commits/master
+
+1.3.2 (10-25-2016)
+===
+
+* Bugfix: Wonky menu display (visuallyhidden classes not set correctly)
+* Update: Remove language files
+
 
 1.3.1 (09-25-2016)
 ===
